@@ -1,7 +1,7 @@
 ---
 home: true
 heroImage: /logo.png
-actionText: Mulai
+actionText: Memulai
 actionLink: /guide/
 
 altActionText: Pelajari
