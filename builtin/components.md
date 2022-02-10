@@ -1,53 +1,54 @@
-# Components
+# Komponen
 
-## Built-in Components
+## Komponen Bawaan
 
 > The documentations of this section is still working in progress. Before that, you can take a look at the [source code](https://github.com/slidevjs/slidev/blob/main/packages/client/builtin) directly.
+> Dokumentasi bagian ini masih dalam masa pengerjaan. Oleh karena itu, anda dapat melihat [kode sumber](https://github.com/slidevjs/slidev/blob/main/packages/client/builtin) secara langsung.
 
 ### `TOC`
 
-Insert a Table Of Content.
+Tambahkan daftar isi (*table of content*)
 
-Titles and title levels get automatically retrieved from the first title element of each slides.
+Judul dan level judu secara otomatis diambil dari elemen judul pertama pada setiap slide. Anda dapat mengubah perilaku otomatis ini untuk sebuah slide dengan menggunakan sintaks *front matter*:
 
-You can override this automatic behaviour for a slide by using the front matter syntax:
 ```yml
 ---
-title: Amazing slide title
+title: Judul slide yang keren
 level: 2
 ---
 ```
 
-Or if you prefer the slide to not appear in the TOC at all, you can use:
+Atau jika anda ingin slide untuk tidak terdaftar di daftar isi, anda dapat menggunakan:
+
 ```yml
 ---
 hideInToc: true
 ---
 ```
 
-#### Usage
+#### Penggunaan
 ~~~md
 <Toc />
 ~~~
 
-Parameters:
+Parameter:
 
-* `columns` (`string | number`, default: `1`): The number of columns of the display
-* `maxDepth` (`string | number`, default: `Infinity`): The maximum depth level of title to display
-* `minDepth` (`string | number`, default: `1`): The minimum depth level of title to display
+* `columns` (`string | number`, default: `1`): Jumlah kolom yang ditampilkan
+* `maxDepth` (`string | number`, default: `Infinity`): Tingkat kedalaman maksimum judul untuk ditampilkan
+* `minDepth` (`string | number`, default: `1`):  Tingkat kedalaman minimum judul untuk ditampilkan
 * `mode` (`'all' | 'onlyCurrentTree'| 'onlySiblings'`, default: `'all'`):
-  * `'all'`: Display all items
-  * `'onlyCurrentTree'`: Display only items that are in current tree (active item, parents and children of active item)
-  * `'onlySiblings'`: Display only items that are in current tree and their direct siblings
+  * `'all'`: Tampilkan semua item
+  * `'onlyCurrentTree'`: Tampilkan hanya item yang ada di *tree* saat ini (item aktif, *parent item*, dan sub-item dari item aktif)
+  * `'onlySiblings'`: Tampilkan hanya item yang ada di *tree* saat ini dan yang setingkat
 
-## Custom Components
+## Komponen Kustom
 
-Create a directory `components/` under your project root, and simply put your custom Vue components under it, then you can use it with the same name in your markdown file!
+Buat direktori `components/` di *root* projek anda, dana tambahkan komponen Vue kustom anda di dalamnya, lalu anda dapat menggunakannya dengan nama yang sama di dalam fail markdown anda!
 
-Read more in the [Customization](/custom/directory-structure#components) section.
+Baca lebih lanjut di bagian [Kustomisasi](/custom/directory-structure#components).
 
-## Theme-provided Components
+## Komponen Berdasarkan Tema
 
-Themes can provide components as well. Please read their documentations for what they have provided.
+Tema dapat menyediakan tema. Harap baca dokumentasi yang bersangkutan untuk melihat komponen yang disediakan.
 
-Check more in the [directory structure](/custom/directory-structure) section.
+Baca lebih lanjut di bagian [struktur direktori](/custom/directory-structure).
