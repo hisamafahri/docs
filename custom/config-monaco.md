@@ -1,8 +1,8 @@
-# Configure Monaco
+# Konfigurasi Monaco
 
 <Environment type="client" />
 
-Create `./setup/monaco.ts` with the following content:
+Buat `./setup/monaco.ts` dengan isi:
 
 ```ts
 import { defineMonacoSetup } from '@slidev/types'
@@ -12,11 +12,11 @@ export default defineMonacoSetup(async (monaco) => {
 })
 ```
 
-Learn more about [configuring Monaco](https://github.com/Microsoft/monaco-editor).
+Baca lebih lanjut tentang [konfigurasi Monaco](https://github.com/Microsoft/monaco-editor).
 
-## Usage
+## Penggunaan
 
-To use Monaco in your slides, simply append `{monaco}` to your code snippets:
+Untuk menggunakan Monaco di slide anda, tambahkan `{monaco}` ke baris kode anda:
 
 ~~~js
 //```js
@@ -29,7 +29,7 @@ plusOne.value++ // error
 //```
 ~~~
 
-To
+Menjadi
 
 ~~~js
 //```js {monaco}
@@ -42,9 +42,9 @@ plusOne.value++ // error
 //```
 ~~~
 
-## Exporting
+## Mengekspor
 
-By default, Monaco will ONLY work on `dev` mode. If you would like to have it available in the exported SPA, configure it in your frontmatter:
+Secara default, Monaco HANYA akan bekerja di mode `dev`. Jika anda ingin itu tersedia di hasil ekspor SPA, atur formatter anda:
 
 ```yaml
 ---
@@ -52,9 +52,9 @@ monaco: true # default "dev"
 ---
 ```
 
-## Types Auto Installing
+## Instalasi Otomatis Types
 
-When use TypeScript with Monaco, types for dependencies will be installed to the client-side automatically.
+Saat menggunakan TypeScript dengan Monaco, types untuk dependensi akan terpasang secara otomatis ke sisi klien.
 
 ~~~ts
 //```ts {monaco}
@@ -65,11 +65,11 @@ const counter = ref(0)
 //```
 ~~~
 
-In the example above, make sure `vue` and `@vueuse/core` are installed locally as dependencies / devDependencies, Slidev will handle the rest to get the types working for the editor automatically!
+Di contoh di atas, pastikan `vue` dan `@vueuse/core` terpasang secara lokal sebagai dependensi/*devDependencies*, Slidev akan mengatur sisanya agar types berfungsi di editor secara otomatis.
 
-## Configure Themes
+## Konfigurasi Tema
 
-The theme is controlled by Slidev based on the light/dark theme. If you want to customize it, you can pass the theme id to the setup function:
+Tema diatur oleh Slidev berdasarkan tema gelap/terang. Jika anda ingin mengubahnya, anda dapat menambahkan id tema ke fungsi pengaturan:
 
 ```ts
 // ./setup/monaco.ts
@@ -85,7 +85,7 @@ export default defineMonacoSetup(() => {
 })
 ```
 
-If you want to load custom themes:
+Jika anda ingin memuat tema kustom:
 
 ```ts
 import { defineMonacoSetup } from '@slidev/types'
@@ -107,4 +107,4 @@ export default defineMonacoSetup((monaco) => {
 })
 ```
 
-> If you are creating a theme for Slidev, use dynamic `import()` inside the setup function to get better tree-shaking and code-splitting results.
+> Jika anda embuat tema kustom untuk Slidev, gunakan `import()` dinamis di dalam fungsi pengaturan untuk mendapatkan hasil *tree-shaking* dan *code-splitting* yang lebih baik.

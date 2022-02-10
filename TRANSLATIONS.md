@@ -42,7 +42,7 @@ In case it's already been translated but you're wondering how to maintain it, sk
 
 - [ ] `config-katex.md` - Configuring Katex
 - [ ] `config-mermaid.md` - Configuring Mermaid
-- [ ] `config-monaco.md` - Configuring Monaco
+- [x] `config-monaco.md` - Configuring Monaco
 - [ ] `config-shortcuts.md` - Configuring Shortcuts
 - [ ] `config-vite.md` - Configuring Vite
 - [ ] `config-vue.md` - Configuring Vue
