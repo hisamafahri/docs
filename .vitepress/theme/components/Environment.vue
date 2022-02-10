@@ -7,16 +7,16 @@ defineProps<{ type: 'node' | 'client' }>()
 <template>
   <details class="px-4 py-3 mt-4 rounded bg-gray-400 bg-opacity-10">
     <summary class="outline-none">
-      Environment:
+      Lingkungan (environment):
       <span class="capitalize" :class="type === 'node' ? 'text-orange-400' : 'text-green-400'">{{ type }}</span>
     </summary>
 
     <div class="mt-2 opacity-75">
       <span v-if="type === 'node'">
-        This setup function will only run on Node.js environment, you can have access to Node's API.
+        Fungsi pengaturan ini hanya akan berjalan di lingkungan Node.js, Anda dapat memiliki akses ke API Node.
       </span>
       <span v-else>
-        This setup function will only run on client side. Make sure the browser compatibility when importing packages.
+        Fungsi pengaturan ini hanya akan berjalan di bagian klien. Pastikan kompatibilitas browser saat mengimpor paket.
       </span>
     </div>
   </details>
