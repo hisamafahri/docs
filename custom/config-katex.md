@@ -14,4 +14,4 @@ export default defineKatexSetup(() => {
 })
 ```
 
-Dengan pengaturan ini, anda dapat menyediakan pengaturan kustom untuk [KaTex Options](https://katex.org/docs/options.html). Rujuk ke definisi tipe dandokumentasi untuk lebih detail.
+Dengan pengaturan ini, anda dapat menyediakan pengaturan kustom untuk [KaTex Options](https://katex.org/docs/options.html). Rujuk ke definisi tipe dan dokumentasi untuk lebih detail.
