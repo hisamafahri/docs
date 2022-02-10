@@ -1,11 +1,11 @@
 ---
 home: true
 heroImage: /logo.png
-actionText: Get Started
+actionText: Mulai
 actionLink: /guide/
 
-altActionText: Learn More
+altActionText: Pelajari
 altActionLink: /guide/why
 
-footer: MIT Licensed | Copyright © 2021-PRESENT Anthony Fu
+footer: Lisensi MIT | Copyright © 2021-SEKARANG Anthony Fu
 ---
