@@ -47,7 +47,7 @@ Buat direktori `components/` di *root* projek anda, dana tambahkan komponen Vue 
 
 Baca lebih lanjut di bagian [Kustomisasi](/custom/directory-structure#components).
 
-## Komponen Berdasarkan Tema
+## Komponen Bawaan Tema
 
 Tema dapat menyediakan tema. Harap baca dokumentasi yang bersangkutan untuk melihat komponen yang disediakan.
 

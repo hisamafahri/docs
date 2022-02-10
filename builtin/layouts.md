@@ -1,39 +1,39 @@
-# Layouts
+# Tata Letak
 
-## Built-in Layouts
+## Tata Letak Bawaan
 
-> As themes may override layouts behaviour, the best way to know exactly the usage, parameters and examples is referring their documentation.
+> Tema dapat saja merubah tata letak, untuk mengetahui tentang penggunaan, parameter, dan contoh harap merujuk ke dokumentasi terkait.
 
 
 ### `center`
 
-Displays the content in the middle of the screen.
+Menampilkan konten di tengah layar.
 
 ### `cover`
 
-Used to display the cover page for the presentation, may contain the presentation title, contextualization, etc.
+Biasa digunakan untuk menampilkan sampul halaman presentasi, dapat mengandung judul presentasi, konteks, dll.
 
 ### `default`
 
-The most basic layout, to display any kind of content.
+Tata letak paling dasar, untuk menampilkan berbagai macam konten.
 
 ### `end`
 
-The final page for the presentation.
+Halaman terakhir presentasi.
 
 ### `fact`
 
-To show some fact or data with a lot of prominence on the screen.
+Untuk menampilkan beberapa fakta atau data yang menonjol di layar.
 
 ### `full`
 
-Use all the space of the screen to display the content.
+Menggunakan seluruh layar untuk menampilkan konten.
 
 ### `image-left`
 
-Shows an image on the left side of the screen, the content will be placed on the right side.
+Menunjukkan gambar di bagian kiri layar, konten akan ditempatkan di bagian kanan layar.
 
-#### Usage
+#### Penggunaan
 
 ```yaml
 ---
@@ -49,9 +49,9 @@ class: my-cool-content-on-the-right
 
 ### `image-right`
 
-Shows an image on the right side of the screen, the content will be placed on the left side.
+Menunjukkan gambar di bagian kanan layar, konten akan ditempatkan di bagian kiri layar.
 
-#### Usage
+#### Penggunaan
 
 ```yaml
 ---
@@ -67,9 +67,9 @@ class: my-cool-content-on-the-left
 
 ### `image`
 
-Shows an image as the main content of the page.
+Menunjukkan gambar sebagai konten utama halaman.
 
-#### Usage
+#### Penggunaan
 
 ```yaml
 ---
@@ -83,9 +83,9 @@ image: ./path/to/the/image
 
 ### `iframe-left`
 
-Shows a web page on the left side of the screen, the content will be placed on the right side.
+Menunjukkan situs web di bagian kiri layar, konten akan ditempatkan di bagian kanan layar.
 
-#### Usage
+#### Penggunaan
 
 ```yaml
 ---
@@ -101,9 +101,9 @@ class: my-cool-content-on-the-right
 
 ### `iframe-right`
 
-Shows a web page on the right side of the screen, the content will be placed on the left side.
+Menunjukkan situs web di bagian kanan layar, konten akan ditempatkan di bagian kiri layar.
 
-#### Usage
+#### Penggunaan
 
 ```yaml
 ---
@@ -119,9 +119,9 @@ class: my-cool-content-on-the-left
 
 ### `iframe`
 
-Shows a web page as the main content of the page.
+Menunjukkan situs web sebagai konten utama halaman.
 
-#### Usage
+#### Penggunaan
 
 ```yaml
 ---
@@ -135,29 +135,29 @@ url: https://github.com/slidevjs/slidev
 
 ### `intro`
 
-To introduce the presentation, usually with the presentation title, a short description, the author, etc.
+Untuk mengenalkan presentasi, umumnya dengan menggunakan judul presentasi, deskripsi singkat, penulis, dll.
 
 ### `none`
 
-A layout without any existent styling.
+Tata letak tanpa *style* apapun.
 
 ### `quote`
 
-To display a quotation with prominience.
+Untuk menampilkan kutipan dengan jelas.
 
 ### `section`
 
-Used to mark the beginning of a new presentation section.
+Digunakan untuk menandai awal dari bagian presentasi baru.
 
 ### `statement`
 
-Make an affirmation/statement as the main page content.
+Untuk membuat penegasan/pernyataan sebagai isi halaman utama.
 
 ### `two-cols`
 
-Separates the page content in two columns.
+Memisahkan konten halaman dalam dua kolom.
 
-#### Usage
+#### Penggunaan
 
 
 ```md
@@ -165,23 +165,23 @@ Separates the page content in two columns.
 layout: two-cols
 ---
 
-# Left
+# Kiri
 
-This shows on the left
+Ini akan muncul di bagian kiri
 
 ::right::
 
-# Right
+# Kanan
 
-This shows on the right
+Ini akan muncul di bagian kanan
 ```
 
-## Custom Layouts
+## Tata Letak Kustom
 
-Create a directory `layouts/` under your project root, and simply put your custom Vue layout components under it.
+Buat direktori `components/` di *root* projek anda, dana tambahkan komponen Vue kustom anda di dalamnya.
 
-Read more in the [Customization](/custom/directory-structure#layouts) section.
+Baca lebih lanjut di bagian [kustomisasi](/custom/directory-structure#layouts).
 
-## Theme-provided Layouts
+## Tata Letak Bawaan Tema
 
-Themes can provide layouts or override existing ones. Please read their documentation for what they have provided.
+Tema dapat menyediakan tema. Harap baca dokumentasi yang bersangkutan untuk melihat komponen yang disediakan.
