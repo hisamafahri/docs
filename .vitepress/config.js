@@ -2,51 +2,51 @@
 
 const Guide = [
   {
-    text: 'Why Slidev',
+    text: 'Mengapa Slidev',
     link: '/guide/why',
   },
   {
-    text: 'Getting Started',
+    text: 'Memulai',
     link: '/guide/',
   },
   {
-    text: 'Installation',
+    text: 'Pemasangan',
     link: '/guide/install',
   },
   {
-    text: 'Markdown Syntax',
+    text: 'Sintaks Markdown',
     link: '/guide/syntax',
   },
   {
-    text: 'Navigation',
+    text: 'Navigasi',
     link: '/guide/navigation',
   },
   {
-    text: 'Animations',
+    text: 'Animasi',
     link: '/guide/animations',
   },
   {
-    text: 'Exporting',
+    text: 'Mengekspor',
     link: '/guide/exporting',
   },
   {
-    text: 'Static Hosting',
+    text: 'Hosting Statis',
     link: '/guide/hosting',
   },
   {
-    text: 'Record Presentation',
+    text: 'Rekam Presentasi',
     link: '/guide/recording',
   },
   {
-    text: 'Presenter Mode',
+    text: 'Mode Penampil',
     link: '/guide/presenter-mode',
   },
   {
-    text: 'Drawing & Annotations',
+    text: 'Menggambar & Anotasi',
     link: '/guide/drawing',
   },
   {
-    text: 'Editor Integrations',
+    text: 'Integrasi Editor',
     link: '/guide/editors',
   },
   {
@@ -57,22 +57,26 @@ const Guide = [
 
 const Theme = [
   {
-    text: 'Use Theme',
+    text: 'Gunakan Tema',
     link: '/themes/use',
   },
   {
-    text: 'Theme Gallery',
+    text: 'Galeri Tema',
     link: '/themes/gallery',
   },
   {
-    text: 'Write a Theme',
+    text: 'Buat Tema',
     link: '/themes/write-a-theme',
   },
 ]
 
 const Translations = [
   {
+    text: 'Bahasa Indonesia',
+  },
+  {
     text: 'English',
+    link: 'https://sli.dev{{pathname}}',
   },
   {
     text: '简体中文',
@@ -114,11 +118,11 @@ const Translations = [
 
 const Customizations = [
   {
-    text: 'Customizations',
+    text: 'Kustomisasi',
     link: '/custom/',
   },
   {
-    text: 'Directory Structure',
+    text: 'Struktur Direktori',
     link: '/custom/directory-structure',
   },
   {
@@ -126,84 +130,84 @@ const Customizations = [
     link: '/custom/fonts',
   },
   {
-    text: 'Highlighters',
+    text: 'Highlighter',
     link: '/custom/highlighters',
   },
   {
-    text: 'Configure Vue',
+    text: 'Konfigurasi Vue',
     link: '/custom/config-vue',
   },
   {
-    text: 'Configure Vite',
+    text: 'Konfigurasi Vite',
     link: '/custom/config-vite',
   },
   {
-    text: 'Configure Windi CSS',
+    text: 'Konfigurasi Windi CSS',
     link: '/custom/config-windicss',
   },
   {
-    text: 'Configure Monaco',
+    text: 'Konfigurasi Monaco',
     link: '/custom/config-monaco',
   },
   {
-    text: 'Configure KaTeX',
+    text: 'Konfigurasi KaTeX',
     link: '/custom/config-katex',
   },
   {
-    text: 'Configure Mermaid',
+    text: 'Konfigurasi Mermaid',
     link: '/custom/config-mermaid',
   },
   {
-    text: 'Configure Shortcuts',
+    text: 'Konfigurasi Shortcuts',
     link: '/custom/config-shortcuts',
   },
   {
-    text: 'Vue Global Context',
+    text: 'Konteks Global Vue',
     link: '/custom/vue-context',
   },
   {
-    text: 'Global Layers',
+    text: 'Layer Global',
     link: '/custom/global-layers',
   }
 ]
 
 const Resources = [
   {
-    text: 'Showcases',
+    text: 'Pameran',
     link: '/showcases',
   },
   {
-    text: 'Learning Resources',
+    text: 'Sumber Belajar',
     link: '/resources/learning',
   },
   {
-    text: 'Curated Covers',
+    text: 'Sampul Pilihan',
     link: '/resources/covers',
   },
 ]
 
 const slidebars = [
   {
-    text: 'Guide',
+    text: 'Petunjuk',
     children: Guide,
   },
   {
-    text: 'Themes',
+    text: 'Tema',
     children: Theme,
   },
   {
-    text: 'Customizations',
+    text: 'Kustomisasi',
     children: Customizations,
   },
   {
-    text: 'Built-in',
+    text: 'Bawaan',
     children: [
       {
-        text: 'Components',
+        text: 'Komponen',
         link: '/builtin/components',
       },
       {
-        text: 'Layouts',
+        text: 'Tata Letak',
         link: '/builtin/layouts',
       },
     ],
@@ -215,7 +219,7 @@ const slidebars = [
  */
 module.exports = {
   title: 'Slidev',
-  description: 'Presentation slides for developers',
+  description: 'Slide Presentasi untuk Pengembang',
   head: [
     ['link', { rel: 'icon', type: 'image/png', href: '/favicon.png' }],
     ['meta', { name: 'author', content: 'Anthony Fu' }],
@@ -234,7 +238,7 @@ module.exports = {
     logo: '/logo.svg',
     docsBranch: 'main',
     editLinks: true,
-    editLinkText: 'Suggest changes to this page',
+    editLinkText: 'Sarankan perubahan pada halaman ini',
 
     algolia: {
       apiKey: '1a5c5a504139c58f428974c78c55291d',
@@ -247,23 +251,23 @@ module.exports = {
 
     nav: [
       {
-        text: 'Guide',
+        text: 'Petunjuk',
         items: Guide,
       },
       {
-        text: 'Theme',
+        text: 'Tema',
         items: Theme,
       },
       {
-        text: 'Customize',
+        text: 'Kustomisasi',
         items: Customizations,
       },
       {
-        text: 'Resources',
+        text: 'Sumber',
         items: Resources,
       },
       {
-        text: 'English',
+        text: 'Bahasa Indonesia',
         items: Translations,
       },
     ],
