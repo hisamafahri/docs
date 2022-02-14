@@ -1,10 +1,10 @@
-# Configure Windi CSS
+# Konfigurasi Windi CSS
 
 <Environment type="node" />
 
-Markdown naturally supports embedded HTML markups. You can therefore style your content the way you want. To provide some convenience, we have [Windi CSS](https://github.com/windicss/windicss) built-in, so you can style markup directly using class utilities. 
+Markdown secara alami mendukung *embedded HTML markups*. Anda dapat mengatur *style* konten anda sesuai keinginan anda. Agar lebih nyaman, kami memiliki [Windi CSS](https://github.com/windicss/windicss) secara bawaan, sehingga anda dapat mengatur gaya/style markup secara langsung menggunakan kelas.
 
-For example:
+Contohnya:
 
 ```html
 <div class="grid pt-4 gap-4 grids-cols-[100px,1fr]">
@@ -17,11 +17,11 @@ For example:
 </div>
 ```
 
-The [Attributify Mode](https://windicss.org/posts/v30.html#attributify-mode) in [Windi CSS v3.0](https://windicss.org/posts/v30.html) is enabled by default.
+[Attributify Mode](https://windicss.org/posts/v30.html#attributify-mode) di [Windi CSS v3.0](https://windicss.org/posts/v30.html) diaktifkan secara default.
 
-## Configurations
+## Konfigurasi
 
-To configure Windi CSS, create `setup/windicss.ts` with the following content to extend the builtin configurations
+Untuk mengkonfigurasi Windi CSS, buat `setup/windicss.ts` dengan isi sebagai berikut untuk memperluas konfigurasi bawaan:
 
 ```ts
 // setup/windicss.ts
@@ -46,4 +46,4 @@ export default defineWindiSetup(() => ({
 }))
 ```
 
-Learn more about [Windi CSS configurations](https://windicss.org/guide/configuration.html)
+Pelajari lebih lanjut tentang [konfigurasi Windi CSS](https://windicss.org/guide/configuration.html)
