@@ -1,12 +1,12 @@
-# Configure Vite
+# Konfigurasi Vite
 
 <Environment type="node" />
 
-Slidev is powered by [Vite](http://vitejs.dev/) under the hood. This means you can leverage Vite's great plugin system to customize your slides even further.
+Slidev didukung dengan [Vite](http://vitejs.dev/) dibaliknya. Hal ini berarti anda dapat memanfaatkan sistem plugin luar biasa Vite untuk mengkustomisasi slide lebih jauh lagi.
 
-The `vite.config.ts` will be respected if you have one.
+Fail `vite.config.ts` akan bermanfaat bila anda memilikinya.
 
-Slidev has the following plugins preconfigured:
+Slidev memiliki plugin berikut ini sudah terkonfigurasi sebelumnya:
 
 - [@vitejs/plugin-vue](https://github.com/vitejs/vite/tree/main/packages/plugin-vue)
 - [unplugin-vue-components](https://github.com/antfu/unplugin-vue-components)
@@ -15,13 +15,13 @@ Slidev has the following plugins preconfigured:
 - [vite-plugin-windicss](https://github.com/windicss/vite-plugin-windicss)
 - [vite-plugin-remote-assets](https://github.com/antfu/vite-plugin-remote-assets)
 
-Learn more about the [pre-configurations here](https://github.com/slidevjs/slidev/blob/main/packages/slidev/node/plugins/preset.ts).
+Pelajari lebih lanjut tentang [pre-configurations di sini](https://github.com/slidevjs/slidev/blob/main/packages/slidev/node/plugins/preset.ts).
 
-## Configure Internal Plugins
+## Mengkonfigurasi Plugin Internal
 
-> Available since v0.21
+> Tersedia sejak v0.21
 
-To configure the built-in plugins list above, create `vite.config.ts` with the following content. Please note Slidev has some preconfigure options for those plugins, this usage will override some of them, which could potentially cause the app to break. Please treat this as **an advanced feature**, make sure you know what you are doing before moving on.
+Untuk mengkonfigurasi daftar plugin bawaan di atas, buat fail `vite.config.ts` dengan isi sebaai berikut. Harap dicatat bahwa Slidev memiliki beberapa opsi yang telah diatur sebelumnya untuk plugin-plugin tersebut, konfigurasi ini akan mengubah beberapa diantarnya, yang dapat berpotensi menyebabkan aplikasi rusak/tidak berjalan sebagaimana mestinya. Harap anggap inin sebagai **fitur lanjutan**, pastikan anda tau apa yang anda lakukan sebelum melanjutkan.
 
 ```ts
 import { defineConfig } from 'vite'
@@ -43,4 +43,4 @@ export default defineConfig({
 })
 ```
 
-See the [type declarations](https://github.com/slidevjs/slidev/blob/main/packages/slidev/node/options.ts#L50) for more options.
+Lihat [type declarations](https://github.com/slidevjs/slidev/blob/main/packages/slidev/node/options.ts#L50) untuk opsi lainnya.
