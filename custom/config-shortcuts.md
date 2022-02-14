@@ -1,10 +1,10 @@
-# Configure Shortcuts
+# Konfigurasi Shortcuts
 
-> Available since v0.20
+> Tersedia sejak v0.20
 
 <Environment type="client" />
 
-Create `./setup/shortcuts.ts` with the following content:
+Buat `./setup/shortcuts.ts` dengan isi:
 
 ```ts
 import { defineShortcutsSetup, NavOperations } from '@slidev/types'
@@ -25,8 +25,8 @@ export default defineShortcutsSetup((nav: NavOperations) => {
 })
 ```
 
-With the setup, you can provide the custom setting for shortcuts mentioned in [Navigation](/guide/navigation#navigation-bar). The above configuration binds next animation or slide to <kbd>enter</kbd> and previous animation or slide to <kbd>backspace</kbd>.
+Dengan pengaturan ini, anda dapat menyediakan pengaturan kusto untuk *shortcuts* di bagian [Navigation](/guide/navigation#navigation-bar). Konfigurasi di atas mengikat animasi atau slide berikutnya ke <kbd>enter</kbd> dan animasi atau slide sebelumnya ke <kbd>backspace</kbd>.
 
-The configuration function receives an object with some navigation methods, and returns an array containing some shortcut configuration. Refer to the type definitions for more details.
+Fungsi konfigurasi menerima sebuah objek dengan beberapa metode navigasi, dan mengembalikan sebuah *array* yang mengandung beberapa konfigurasi *shortcut*. Rujuk ke definisi tipe untuk detail lebih lanjut.
 
-Refer to [useMagicKeys | VueUse](https://vueuse.org/core/useMagicKeys/) for more details about key pressed event.
+Rujuk ke [useMagicKeys | VueUse](https://vueuse.org/core/useMagicKeys/) untuk detail lebih lanjut tentang event tekan.
