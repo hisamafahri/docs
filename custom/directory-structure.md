@@ -1,30 +1,30 @@
-# Directory Structure
+# Struktur Direktori
 
-Slidev employs some directory structure conventions to minimize the configuration surface and to make the functionality extensions flexible and intuitive.
+Slidev menggunakan beberapa aturan struktur untuk mengurangi konfigurasi di permukaan dan untuk membuat fungsionalitas ekstensi fleksibel dan intuitif.
 
-The basic structure is as follows:
+Struktur dasarnya adalah:
 
 ```bash
 your-slidev/
-  ├── components/       # custom components
-  ├── layouts/          # custom layouts
-  ├── public/           # static assets
-  ├── setup/            # custom setup / hooks
-  ├── styles/           # custom style
-  ├── index.html        # injections to index.html
-  ├── slides.md         # the main slides entry
-  └── vite.config.ts   # extending vite config
+  ├── components/       # komponen kustom
+  ├── layouts/          # tata letak kustom
+  ├── public/           # aset statis
+  ├── setup/            # pengaturan / hooks kustom
+  ├── styles/           # style kustom
+  ├── index.html        # injeksi ke index.html
+  ├── slides.md         # entri slide utama
+  └── vite.config.ts    # perluasan konfigurasi vite
 ```
 
-All of them are optional.
+Seluruhnya bersifat opsional.
 
-## Components
+## Komponen (Components)
 
-Conventions: `./components/*.{vue,js,ts,jsx,tsx,md}`
+Konvensi: `./components/*.{vue,js,ts,jsx,tsx,md}`
 
-Components inside this directory can be directly used in the slides Markdown with the same component name as the file name.
+Komponen di dalam direktori dapat digunakan secara langsung di slide Markdown dengan nama komponen sama dengan nama file.
 
-For example:
+Contohnya:
 
 ```bash
 your-slidev/
@@ -37,24 +37,24 @@ your-slidev/
 ```md
 <!-- slides.md -->
 
-# My Slide
+# Slide Saya
 
 <MyComponent :count="4"/>
 
-<!-- both namings work -->
+<!-- kedua jenis penamaan berfungsi -->
 
 <hello-world foo="bar">
   Slot
 </hello-world>
 ```
 
-This feature is powered by [`vite-plugin-components`](https://github.com/antfu/vite-plugin-components), learn more there.
+Fitur ini diberdayakan oleh [`vite-plugin-components`](https://github.com/antfu/vite-plugin-components), pelajari lebih lanjut di sana.
 
-Slidev also provides some [built-in components](/builtin/components) for you to use.
+Slidev juga menyediakan beberapa [komponen bawaan](/builtin/components) untuk anda gunakan.
 
-## Layouts
+## Tata Letak (Layouts)
 
-Conventions: `./layouts/*.{vue,js,ts,jsx,tsx}`
+Konvensi: `./layouts/*.{vue,js,ts,jsx,tsx}`
 
 ```
 your-slidev/
@@ -64,7 +64,7 @@ your-slidev/
       └── my-cool-theme.vue
 ```
 
-You can use any filename for your layout. You then reference your layout in you YAML header using the filename.
+Anda dapat menggunakan nama file apapun untuk tata letak anda. Lalu anda dapat merujuk tata letak anda di *YAML header* menggunakan nama file tersebut.
 
 ```yaml
 ---
@@ -72,9 +72,9 @@ layout: my-cool-theme
 ---
 ```
 
-If the layout you provide has the same name as a built-in layout or a theme layout, your custom layout will take precedence over the built-in/theme layout. The priority order is `local > theme > built-in`.
+Jika tata letak yang anda sediakan memiliki nama yang sama dengan tata letak atau tema bawaan, tata letak kustom anda akan lebih diutamakan dibandingkan dengan tata letak atau tema bawaan. Urutan prioritasnya adalah: `lokal > tema > bawaan`.
 
-In the layout component, use `<slot/>` for the slide content. For example:
+Di komponen tat letak, gunakan `<slot/>` untuk konten slide. Contohnya:
 
 ```html
 <!-- default.vue -->
@@ -87,15 +87,15 @@ In the layout component, use `<slot/>` for the slide content. For example:
 
 ## Public
 
-Conventions: `./public/*`
+Konvensi: `./public/*`
 
-Assets in this directory will be served at root path `/` during dev, and copied to the root of the dist directory as-is. Read more about [Vite's `public` directory](https://vitejs.dev/guide/assets.html#the-public-directory).
+Aset di direktori ini akan disediakan di *root path* `/` saat pengembangan, dan disalin ke *rott* direktori dist apa adanya. Pelajari lebih lanjut tentanf [direktori `public` Vite](https://vitejs.dev/guide/assets.html#the-public-directory).
 
 ## Style
 
-Conventions: `./style.css` | `./styles/index.{css,js,ts}`
+Konvensi: `./style.css` | `./styles/index.{css,js,ts}`
 
-Files following this convention will be injected to the App root. If you need to import multiple css entries, you can create the following structure and managing the import order yourself.
+File yang mengikuti konvensi ini akan disuntikkan ke *root* aplikasi. Jika anda perlu untuk mengimpor beberapa entri css, anda dapat membuar struktur di bawah ini dan mengatur urutan impor anda sendiri.
 
 ```bash
 your-slidev/
@@ -115,7 +115,7 @@ import './code.css'
 import './layouts.css'
 ```
 
-Styles will be processed by [Windi CSS](http://windicss.org/) and [PostCSS](https://postcss.org/), so you can use css nesting and [at-directives](https://windicss.org/features/directives.html) out-of-box. For example:
+Style akan diproses oleh [Windi CSS](http://windicss.org/) dan [PostCSS](https://postcss.org/), sehingga anda dapat menggunakan *css nesting* dan [at-directives](https://windicss.org/features/directives.html) secara langsung. Misalnya:
 
 ```less
 .slidev-layout {
@@ -135,15 +135,15 @@ Styles will be processed by [Windi CSS](http://windicss.org/) and [PostCSS](http
 }
 ```
 
-[Learn more about the syntax](https://windicss.org/features/directives.html).
+[Pelajari lebih lanjut tentang sintaksnya](https://windicss.org/features/directives.html).
 
 ## `index.html`
 
-Conventions: `index.html`
+Konvensi: `index.html`
 
-The `index.html` provides the ability to inject meta tags and/or scripts to the main `index.html`
+File `index.html` menyediakan kemampuan untuk memasukkan tag meta dan/atau *scripts* ke `index.html` utama.
 
-For example, for the following custom `index.html`:
+Misalnya, file `index.html` kustom di bawah ini:
 
 ```html
 <!-- ./index.html -->
@@ -157,7 +157,7 @@ For example, for the following custom `index.html`:
 </body>
 ```
 
-The final hosted `index.html` will be:
+File `index.html` akhir akan menjadi:
 
 ```html
 <!DOCTYPE html>
@@ -179,9 +179,9 @@ The final hosted `index.html` will be:
 </html>
 ```
 
-## Global Layers
+## Tata Letak Global
 
-Conventions: `global-top.vue` | `global-bottom.vue`
+Konvensi: `global-top.vue` | `global-bottom.vue`
 
-Learn more: [Global Layers](/custom/global-layers)
+Pelajari lebih lanjut: [Tata Letak Global](/custom/global-layers)
 
