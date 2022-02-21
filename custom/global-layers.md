@@ -1,56 +1,56 @@
-# Global Layers
+# Tata Letak Global
 
-> Available since v0.17
+> Tersedia sejak v0.17
 
-Global layers allow you to have custom components that **persistent** across slides. This could be useful for having footers, cross-slides animations, global effects, etc.
+Tata letak global memungkinkan anda untuk memiliki komponen kustom yang **tetap** di seluruh slide. Hal ini dapat berguna untuk *footer*, animasi antar slide, efek global, dll.
 
-Slidev provides two layers for this usage, create `global-top.vue` or `global-bottom.vue` under your project root and it will pick up automatically.
+Slidev menyediakan dua lapis untuk penggunaan ini, buat `global-top.vue` atau `global-bottom.vue` di *root* projek anda dan Slidev akan menghubungkannya secara otomatis.
 
-Layers relationship:
+Hubungan tata letak:
 
-- Global Top (`global-top.vue`)
-- Slides
-- Global Bottom (`global-bottom.vue`)
+- Global Atas (`global-top.vue`)
+- Slide
+- Global Bawah (`global-bottom.vue`)
 
-## Example
+## Contoh
 
 ```html
 <!-- global-top.vue -->
 <template>
-  <footer class="absolute bottom-0 left-0 right-0 p-2">Your Name</footer>
+  <footer class="absolute bottom-0 left-0 right-0 p-2">Nama Anda</footer>
 </template>
 ```
 
-The text `Your Name` will appear to all your slides.
+Teks `Nama anda` akan muncul di semua slide.
 
-To enabled it conditionally, you can apply it with the [Vue Global Context](/custom/vue-context).
+Untuk mengaktifkannya secara kondisional, anda dapat menambahkannya dengan [Vue Konteks Global](/custom/vue-context).
 
 ```html
-<!-- hide the footer from Page 4 -->
+<!-- menyembunyikan *footer* dari halaman 4 -->
 <template>
   <footer
     v-if="$slidev.nav.currentPage !== 4"
     class="absolute bottom-0 left-0 right-0 p-2"
   >
-    Your Name
+    Nama Anda
   </footer>
 </template>
 ```
 
 ```html
-<!-- hide the footer from "cover" layout -->
+<!-- menyembunyikan *footer* dari tata letak "cover" -->
 <template>
   <footer
     v-if="$slidev.nav.currentLayout !== 'cover'"
     class="absolute bottom-0 left-0 right-0 p-2"
   >
-    Your Name
+    Nama Anda
   </footer>
 </template>
 ```
 
 ```html
-<!-- an example footer for pages -->
+<!-- contoh halaman *footer* -->
 <template>
   <footer
     v-if="$slidev.nav.currentLayout !== 'cover'"
