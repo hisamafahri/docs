@@ -1,44 +1,44 @@
 # Fonts
 
-> Available since v0.20
+> Tersedia sejak v0.20
 
-While you can use HTML and CSS to custom the fonts and style for your slides as you want, Slidev also provides a convenient way to use them effortlessly.
+Anda dapat menggunakan HTML dan CSS untuk mengatur font dan *style* slide anda sesuai keinginan, Slidev juga menyediakan cara yang mudah untuk menggunakannya.
 
-In your frontmatter, configure as following
+Di *frontmatter* anda, atur seperti berikut
 
 ```yaml
 ---
 fonts:
-  # basically the text
+  # teks dasar
   sans: 'Robot'
-  # use with `font-serif` css class from windicss
+  # gunakan dengan kelas css `font-serif` dari windicss
   serif: 'Robot Slab'
-  # for code blocks, inline code, etc.
+  # untuk blok kode, baris kode, dll.
   mono: 'Fira Code'
 ---
 ```
 
-And that's all.
+Cukup itu saja.
 
-Fonts will be **imported automatically from [Google Fonts](https://fonts.google.com/)**. That means you can use any fonts available on Google Fonts directly.
+Font akan **diimpor secara otomatis dari [Google Fonts](https://fonts.google.com/)**. Hal tersebut berarti anda dapat menggunakan font apapun yang tersedia dari Google Fonts secara langsung.
 
-## Local Fonts
+## Font Lokal
 
-By default, Slidev assumes all the fonts specified via `fonts` configurations come from Google Fonts. If you want to use local fonts, specify the `fonts.local` to opt-out the auto-importing. 
+Secara *default*, Slidev berasumsi bahwa semua font diatur melalui konfigurasi `fonts` dari Google Fonts. Jika and ingin menggunakan font lokal, atur `fonts.local` untuk *opt-out* dari auto-impor.
 
 ```yaml
 ---
 fonts:
-  # like font-family in css, you can use `,` to separate multiple fonts for fallback
+  # seperti `font-family` di css, anda dapat menggunakan `,` untuk memisahkan beberapa font secara bersamaan
   sans: 'Helvetica Neue,Robot'
-  # mark 'Helvetica Neue' as local font
+  # menandakan bahwa 'Helvetica Neue' sebagai font lokal
   local: 'Helvetica Neue'
 ---
 ```
 
-## Weights & Italic
+## Ketebalan & Kemiringan
 
-By default, Slidev imports three weights `200`,`400`,`600` for each font. You can configure them by:
+Secara *default*, Slidev mengimpot tiga ketebalan `200`,`400`, dan `600` untuk setiap font. Anda dapat mengaturnya dengan:
 
 ```yaml
 ---
@@ -46,16 +46,16 @@ fonts:
   sans: 'Robot'
   # default
   weights: '200,400,600'
-  # import italic fonts, default `false`
+  # mengimpor font italic (miring), default `false`
   italic: false
 ---
 ```
 
-This configuration applies to all web fonts. For more fine-grained controls of each font's weights, you will need to manually import them with [HTML](/custom/directory-structure.html#index-html) and CSS.
+Konfigurasi ini berlaku untuk semua font web. Untuk kontrol lebih detail pada setiap ketebalan font, anda harus mengimpr ketebalan satu-per-satu dengan [HTML](/custom/directory-structure.html#index-html) dan CSS.
 
-## Fallback Fonts
+## Font Pengganti
 
-For most of the scenarios, you only need to specify the "special font" and Slidev will append the fallback fonts for you, for example:
+Secara umum, anda hanya perlu mengatur "font spesial" dan Slidev akan menambahkan dan mengganti font untuk anda, misalnya:
 
 ```yaml
 ---
@@ -66,7 +66,7 @@ fonts:
 ---
 ```
 
-will result in 
+akan menghasilkan
 
 ```css
 .font-sans {
@@ -80,7 +80,7 @@ will result in
 }
 ```
 
-If you want to disable the fallback fonts, configure as following
+Jika anda ingin menonaktifkan font pengganti, atur sebagai berikut
 
 ```yaml
 ---
@@ -90,12 +90,12 @@ fonts:
 ---
 ```
 
-## Providers
+## Penyedia
 
-- Options: `google` | `none`
+- Opsi: `google` | `none`
 - Default: `google`
 
-Currently, only Google Fonts is supported, we are planned to add more providers in the future. Specify to `none` will disable the auto-importing feature entirely and treat all the fonts local.
+Saat ini, hanya Gogle Font yang didukung, kami merencanakan untuk menambahkan peneyedia lain di masa depan. Atur ke `none` untuk menonaktifkan fitur auto-impor secara penuh dan menganggap seluruh font adalah lokal.
 
 ```yaml
 ---
