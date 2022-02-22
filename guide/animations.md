@@ -1,79 +1,79 @@
-# Animations
+# Animasi
 
-## Click Animations
+## Klik Animasi
 
 ### `v-click`
 
-To apply "click animations" for elements, you can use the `v-click` directive or `<v-click>` components
+Untuk menerapkan "animasi klik" untuk elemen, Anda dapat menggunakan direktif `v-click` atau komponen `<v-click>`
 
 ```md
-# Hello
+# Halo
 
-<!-- Component usage: this will be invisible until you press "next" -->
+<!-- Penggunaan komponen: ini tidak akan terlihat sampai Anda menekan "berikutnya" -->
 <v-click>
 
-Hello World
+Halo Dunia
 
 </v-click>
 
-<!-- Directive usage: this will be invisible until you press "next" the second time -->
+<!-- Penggunaan direktif: ini tidak akan terlihat sampai Anda menekan "berikutnya" untuk kedua kalinya -->
 <div v-click class="text-xl p-2">
 
-Hey!
+Hai!
 
 </div>
 ```
 
 ### `v-after`
 
-The usage of `v-after` is similar to `v-click` but it will turn the element visible when the previous `v-click` is triggered.
+Penggunaan `v-after` mirip dengan `v-click` tetapi akan membuat elemen terlihat ketika `v-click` sebelumnya dipicu.
 
 ```md
-<div v-click>Hello</div>
-<div v-after>World</div>
+<div v-click>Halo</div>
+<div v-after>Dunia</div>
 ```
 
-When you click the "next" button, both `Hello` and `World` will show up together.
+Saat Anda mengklik tombol "berikutnya", `Halo` dan `Dunia` akan muncul bersamaan.
 
 ### `v-click-hide`
 
-Same as `v-click` but instead of making the element appear, it makes the element invisible after clicking.
+Sama seperti `v-click` tetapi alih-alih membuat elemen muncul, itu membuat elemen tidak terlihat setelah diklik.
 
 ```md
-<div v-click-hide>Hello</div>
+<div v-click-hide>Halo</div>
 ```
 
 ### `v-clicks`
 
-`v-clicks` is only provided as a component. It's a shorthand to apply the `v-click` directive to all its child elements. It is especially useful when working with lists.
+`v-clicks` hanya disediakan sebagai komponen. Ini adalah singkatan untuk menerapkan direktif `v-click` ke semua elemen turunannya. Ini sangat berguna ketika bekerja dengan daftar.
 
 ```md
 <v-clicks>
 
-- Item 1
-- Item 2
-- Item 3
-- Item 4
+- Butir 1
+- Butir 2
+- Butir 3
+- Butir 4
 
 </v-clicks>
 ```
 
-An item will become visible each time you click "next".
+Item akan terlihat setiap kali Anda mengklik "berikutnya".
 
-### Custom Clicks Count
+### Jumlah Klik Kustom
 
-By default, Slidev counts how many steps are needed before going to the next slide. You can override this setting by passing the `clicks` frontmatter option:
+Secara default, Slidev menghitung berapa banyak langkah yang diperlukan sebelum pergi ke slide berikutnya. Anda dapat mengganti setelan ini dengan meneruskan opsi `clicks` frontmatter:
 
 ```yaml
 ---
-# 10 clicks in this slide, before going to the next
+# 10 klik di slide ini, sebelum lanjut ke slide berikutnya
 clicks: 10
 ---
 ```
 
-### Ordering
+### Penyusunan
 
-Passing the click index to your directives, you can customize the order of the revealing
+Melewati indeks klik ke arahan Anda, Anda dapat menyesuaikan urutan pengungkapan
 
 ```md
 <div v-click>1</div>
@@ -82,7 +82,7 @@ Passing the click index to your directives, you can customize the order of the r
 ```
 
 ```md
-<!-- the order is reversed -->
+<!-- urutannya dibalik -->
 <div v-click="3">1</div>
 <div v-click="2">2</div>
 <div v-click="1">3</div>
@@ -93,30 +93,30 @@ Passing the click index to your directives, you can customize the order of the r
 clicks: 3
 ---
 
-<!-- visible after 3 clicks -->
+<!-- terlihat setelah 3 klik -->
 <v-clicks at="3">
-  <div>Hi</div>
+  <div>Hai</div>
 </v-clicks>
 ```
 
-### Element Transitions
+### Transisi Elemen
 
-When you apply the `v-click` directive to your elements, it will attach the class name `slidev-vclick-target` to it. When the elements are hidden, the class name `slidev-vclick-hidden` will also be attached. For example:
-
-```html
-<div class="slidev-vclick-target slidev-vclick-hidden">Text</div>
-```
-
-After a click, it will become
+Saat Anda menerapkan direktif `v-click` ke elemen Anda, itu akan melampirkan nama kelas `slidev-vclick-target` ke dalamnya. Saat elemen disembunyikan, nama kelas `slidev-vclick-hidden` juga akan dilampirkan. Sebagai contoh:
 
 ```html
-<div class="slidev-vclick-target">Text</div>
+<div class="slidev-vclick-target slidev-vclick-hidden">Teks</div>
 ```
 
-By default, a subtle opacity transition is applied to those classes:
+Setelah klik, itu akan menjadi
+
+```html
+<div class="slidev-vclick-target">Teks</div>
+```
+
+Secara default, transisi *opacity* yang halus diterapkan ke kelas-kelas tersebut:
 
 ```css
-// the default
+// default
 
 .slidev-vclick-target {
   transition: opacity 100ms ease;
@@ -128,9 +128,9 @@ By default, a subtle opacity transition is applied to those classes:
 }
 ```
 
-You can override them to customize the transition effects in your custom stylesheets. 
+Anda dapat menimpanya untuk menyesuaikan efek transisi di lembar gaya kustom Anda.
 
-For example, you can achieve the scaling up transitions by: 
+Misalnya, Anda dapat mencapai transisi penskalaan dengan:
 
 ```css
 // styles.css
@@ -144,7 +144,7 @@ For example, you can achieve the scaling up transitions by:
 }
 ```
 
-To specify animations for only certain slide or layout
+Untuk menentukan animasi hanya untuk slide atau tata letak tertentu
 
 ```scss
 .slidev-page-7,
@@ -159,11 +159,11 @@ To specify animations for only certain slide or layout
 }
 ```
 
-Learn more about [customizing styles](/custom/directory-structure#style).
+Pelajari lebih lanjut tentang [kustomisasi style](/custom/directory-structure#style).
 
-## Motion
+## Gerak
 
-Slidev has [@vueuse/motion](https://motion.vueuse.org/) built-in. You can use the `v-motion` directive to any elements to make apply motion on them. For example
+Slidev memiliki [@vueuse/motion](https://motion.vueuse.org/) bawaan. Anda dapat menggunakan direktif `v-motion` ke elemen apa pun untuk menerapkan gerakan pada elemen tersebut. Sebagai contoh
 
 ```html
 <div
@@ -174,9 +174,9 @@ Slidev has [@vueuse/motion](https://motion.vueuse.org/) built-in. You can use th
 </div>
 ```
 
-The text `Slidev` will move from `-80px` to its original position on initialization.
+Teks `Slidev` akan berpindah dari `-80px` ke posisi aslinya saat inisialisasi.
 
-> Note: Slidev preloads the next slide for performance, which means the animations might start before you navigate to the page. To get it works properly, you can disable the preloading for the particular slide
+> Catatan: Slidev mempramuat slide berikutnya untuk performa, yang berarti animasi mungkin dimulai sebelum Anda menavigasi ke halaman. Untuk membuatnya berfungsi dengan baik, Anda dapat menonaktifkan pramuat untuk slide tertentu
 >
 > ```md
 > ---
@@ -184,7 +184,7 @@ The text `Slidev` will move from `-80px` to its original position on initializat
 > ---
 > ```
 >
-> Or control the element life-cycle with `v-if` to have fine-grained controls
+> Atau kendalikan siklus hidup elemen dengan `v-if` untuk mendapatkan kontrol yang lebih detail
 >
 > ```html
 > <div
@@ -196,8 +196,8 @@ The text `Slidev` will move from `-80px` to its original position on initializat
 > </div>
 > ```
 
-Learn mode: [Demo](https://sli.dev/demo/starter/7) | [@vueuse/motion](https://motion.vueuse.org/) | [v-motion](https://motion.vueuse.org/directive-usage.html) | [Presets](https://motion.vueuse.org/presets.html)
+Mode belajar: [Demo](https://sli.dev/demo/starter/7) | [@vueuse/motion](https://motion.vueuse.org/) | [v-motion](https://motion.vueuse.org/directive-usage.html) | [Preset](https://motion.vueuse.org/presets.html)
 
-## Pages Transitions
+## Transisi Halaman
 
-> Built-in support for slides is NOT YET provided in the current version. We are planning to add support for them in the next major version. Before that, you can still use your custom styles and libraries to do that.
+> Dukungan bawaan untuk slide BELUM tersedia dalam versi saat ini. Kami berencana untuk menambahkan dukungan untuk mereka di versi utama berikutnya. Sebelum itu, Anda masih dapat menggunakan gaya dan pustaka khusus untuk melakukannya.
