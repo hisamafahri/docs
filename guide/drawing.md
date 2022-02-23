@@ -1,20 +1,20 @@
-# Drawing & Annotations
+# Gambar & Anotasi
 
-> Available since v0.23
+> Tersedia sejak v0.23
 
-We have [drauu](https://github.com/antfu/drauu) built-in for drawing and annotation that could enhance your presentation further.
+Kami menambahkan [drauu](https://github.com/antfu/drauu) secara bawaan untuk menggambar dan anotasi yang dapat meningkatkan presentasi lebih baik lagi.
 
-To start, click the <carbon-pen class="inline-icon-btn"/> icon in the toolbar and start drawing. It's also available in the [Presenter Mode](/guide/presenter-mode). Drawings and annotations you created will be **synced up** automatically across all instances in real-time.
+Untuk memulai, klik ikon <carbon-pen class="inline-icon-btn"/> di baris alat (*toolbar*) dan mulai menggambar. Ini juga tersedia di [Mode Penampil](/guide/presenter-mode). Gambar dan anotasi yang anda buat akan **disinkronisasi** secara langsung otomatis di seluruh bagian.
 
 <Tweet id="1424027510342250499" />
 
-## Use with Stylus Pen
+## Penggunaan dengan Pena Stylus
 
-When using a stylus pen on a tablet (for example, iPad with Apple Pencil), Slidev could smartly detect the input type. You can directly draw on your slides with the pen without turning on the drawing mode, while having your fingers or mouse control the navigation.
+Saat menggunakan pena stylus di tablet (misal, iPad dengan Apple Pencil), Slidev dapat secara cerdas mendeteksi tipe input. Anda dapat secara langsung menggambar di slide anda dengan pena tersebut tanpa mengubahnya ke mode menggambar, dengan kontrol jari atau tetikus tetap di navigasi.
 
-## Persist Drawings
+## Gambar Tetap
 
-The following frontmatter configuration allows you to persist your drawings as SVGs under `.slidev/drawings` directory and have them inside your exported pdf or hosted site.
+Konfigurasi frontmatter berikut ini memungkinkan anda untuk mempertahankan gambar anda sebagai SVG secara langsung di `.slidev/drawings` dan mempertahankannya di file ekspor atau situs yang di-host.
 
 ```md
 ---
@@ -23,9 +23,9 @@ drawings:
 ---
 ```
 
-## Disable Drawings
+## Menonaktifkan Gambar
 
-Entirely:
+Seluruhnya:
 
 ```md
 ---
@@ -34,7 +34,7 @@ drawings:
 ---
 ```
 
-Only in Development:
+Hanya di Pengembangan:
 
 ```md
 ---
@@ -43,7 +43,7 @@ drawings:
 ---
 ```
 
-Only in Presenter Mode:
+Hanya di Mode Penampil:
 
 ```md
 ---
@@ -52,9 +52,9 @@ drawings:
 ---
 ```
 
-## Drawing Syncing
+## Sinkronisasi Gambar
 
-By default, Slidev syncs up your drawings across all instances. If you are sharing your slides with others, you might want to disable the syncing by:
+Secara defaulr, Slidev menyingkronisasi gambar anda di seluruh bagian. Jika anda membagikan slide anda dengan orang lain, anda mungkin ingin menonaktifkan sinkronisasi dengan:
 
 ```md
 ---
@@ -63,6 +63,4 @@ drawings:
 ---
 ```
 
-With this config, only the drawing from the presenter instance will be able to sync with others.
-
-
+Dengan konfigurasi ini, hanya gambar dari bagian mode penampil yang dapat di-sinkronisasi dengan yang lainnya.
