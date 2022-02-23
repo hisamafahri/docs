@@ -1,42 +1,42 @@
-# Exporting
+# Mengekspor
 
 ## PDF
 
-> Exporting to PDF or PNG relies on [Playwright](https://playwright.dev) for rendering. You will therefore need to install [`playwright-chromium`](https://playwright.dev/docs/installation#download-single-browser-binary) to use this feature.
-> If you are doing exporting in a CI environment, [the playwright CI guide](https://playwright.dev/docs/ci) can be helpful.
+> Mengeksor ke PDF atau PNG mengandalkan [Playwright](https://playwright.dev) untuk rendering. Anda akan perlu untuk memasang [`playwright-chromium`](https://playwright.dev/docs/installation#download-single-browser-binary) untuk menggunakan fitur ini.
+> Jika anda mengekspor di lingkungan CI, [panduan CI playwright](https://playwright.dev/docs/ci) akan berguna.
 
-Install `playwright-chromium`
+Pasang `playwright-chromium`
 
 ```bash
 $ npm i -D playwright-chromium
 ```
 
-Now export your slides to PDF using the following command
+Lalu, ekspor slide anda ke PDF menggunakan perintah berikut:
 
 ```bash
 $ slidev export
 ```
 
-After a few seconds, your slides will be ready at `./slides-exports.pdf`.
+Setelah beberapa detik, slide anda akan siap di `./slides-exports.pdf`.
 
-### Export Clicks Steps
+### Mengekspor Langkah Klik
 
-> Available since v0.21
+> Tersedia sejak v0.21
 
-By default, Slidev exports one page per slide with clicks animations disabled. If you want export slides with multiple steps into multiple pages, pass the `--with-clicks` options.
+Secara default, Slidev mengekspor satu halapamn per slide dengan animasi klik dinonaktifkan. Jika anda ingin mengekspor slide dengan beberapa langkah ke dalam beberapa halaman, tambahkan opsi `--with-clicks`.
 
 ```bash
 $ slidev export --with-clicks
 ```
 
-## PNGs
+## PNG
 
-When passing in the `--format png` option, Slidev will export PNG images for each slide instead of a PDF.
+Saat menambahkan opsi `--format png`, Slidev akan mengekspor gambar PNG untuk setiap slide daripada sebuah PDF.
 
 ```bash
 $ slidev export --format png
 ```
 
-## Single-Page Application (SPA)
+## Aplikasi Satu Halaman (Single-Page Application/SPA)
 
-See [Static Hosting](/guide/hosting).
+Lihat [Hosting Statis](/guide/hosting).

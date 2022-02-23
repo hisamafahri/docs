@@ -1,4 +1,4 @@
-# Static Hosting
+# Hosting Statis
 
 ## Build Single Page Applications (SPA)
 
