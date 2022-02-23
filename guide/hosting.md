@@ -1,28 +1,28 @@
 # Hosting Statis
 
-## Build Single Page Applications (SPA)
+## Membuat Aplikasi Satu Halaman (Single Page Applications/SPA)
 
-You can also build the slides into a self-hostable SPA:
+Anda dapat membuat slide menjadi *self-hostable SPA*:
 
 ```bash
 $ slidev build
 ```
 
-The generated application will be available under `dist/` and then you can host it on [GitHub Pages](https://pages.github.com/), [Netlify](https://netlify.app/), [Vercel](https://vercel.com/), or whatever you want. Now you can share your slides with the rest of the world with a single link.
+Aplikasi yang dihasilkan akan tersedia di `dist/` dan anda dapat meng-*host* di [GitHub Pages](https://pages.github.com/), [Netlify](https://netlify.app/), [Vercel](https://vercel.com/), atau apapun yang anda inginkan. Sekarang anda dapat berbagi slide Anda dengan seluruh dunia dengan satu tautan.
 
-### Base Path
+### Path Dasar
 
-To deploy your slides under sub-routes, you will need to pass the `--base` option. For example:
+Untuk menyebarkan slide anda di bawah sub-rute, anda perlu menambahkan opsi `--base`. Misalnya:
 
 ```bash
 $ slidev build --base /talks/my-cool-talk/
 ```
 
-Refer to [Vite's documentation](https://vitejs.dev/guide/build.html#public-base-path) for more details.
+Rujuk ke [dokumentasi Vite's](https://vitejs.dev/guide/build.html#public-base-path) untuk detail lebih lanjut.
 
-### Provide Downloadable PDF
+### Menyediakan PDF yang dapat Diunduh
 
-You can provide a downloadable PDF to the viewers of your SPA with the following config:
+Anda dapat menyediakan PDF yang dapat diunduh pembaca SPA anda dengan konfigurasi berikut:
 
 ```md
 ---
@@ -30,9 +30,9 @@ download: true
 ---
 ```
 
-Slidev will generate a pdf file along with the build, and a download button will be displayed in the SPA.
+Slidev akan membuat sebuah PDF file sembari membuat aplikasi, dan tombol unduh akan ditampilkan di SPA anda.
 
-You can also provide a custom url to the PDF. In that case, the rendering process will be skipped.
+Anda dappat menyediakan url khusus ke PDF. Dalam kasus tersebut, proses render akan dilewati.
 
 ```md
 ---
@@ -40,24 +40,24 @@ download: 'https://myside.com/my-talk.pdf'
 ---
 ```
 
-## Examples
+## Contoh
 
-Here are a few examples of the exported SPA:
+Berikut adalah beberapa contoh SPA yang telah diekspor:
 
-- [Starter Template](https://sli.dev/demo/starter)
-- [Composable Vue](https://talks.antfu.me/2021/composable-vue) by [Anthony Fu](https://github.com/antfu)
+- [Template Pemula](https://sli.dev/demo/starter)
+- [Composable Vue](https://talks.antfu.me/2021/composable-vue) oleh [Anthony Fu](https://github.com/antfu)
 
-For more, check out [Showcases](/showcases).
+Untuk lebih banyak, Kunjung [Pameran](/showcases).
 
 ## Hosting
 
-We recommend to use `npm init slidev@lastest` to scaffolding your project, which contains the necessary configuration files for hosting services out-of-box.
+Kami merekomendasikan untuk menggunakan `npm init slidev@lastest` untuk merancah projek anda, yang terdiri dari file konfigurasi yang diperlukan oleh layanan hosting secara otomatis.
 
 ### Netlify
 
 - [Netlify](https://netlify.com/)
 
-Create `netlify.toml` in your project root with the following content.
+Buat `netlify.toml` di *root* projek anda dengan isi:
 
 ```ts
 [build.environment]
@@ -73,13 +73,13 @@ Create `netlify.toml` in your project root with the following content.
   status = 200
 ```
 
-Then go to your Netlify dashboard, create new site with the repository.
+Lalu pergi ke dasbor Netlify anda, buat situs baru dengan repositori.
 
 ### Vercel
 
 - [Vercel](https://vercel.com/)
 
-Create `vercel.json` in your project root with the following content.
+Buat `vercel.json` di *root* projek anda dengan isi:
 
 ```json
 {
@@ -89,13 +89,13 @@ Create `vercel.json` in your project root with the following content.
 }
 ```
 
-Then go to your Vercel dashboard, create new site with the repository.
+Lalu pergi ke dasbor Vercel anda, buat situs baru dengan repositori.
 
 ## GitHub Pages
 
 - [GitHub Pages](https://pages.github.com/)
 
-Create `.github/workflows/deploy.yml` with following content to deploy your slides to GitHub Pages via GitHub Actions.
+Buat `.github/workflows/deploy.yml` dengan isi sebagai berikut untuk menyebarkan slide anda ke GitHub Pages melalui GitHub Actions.
 
 ```yaml
 name: Deploy pages
