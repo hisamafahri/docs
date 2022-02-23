@@ -1,18 +1,18 @@
-# Editor Support
+# Dukungan Editor
 
-Since Slidev is using Markdown as the source entry, you can use ANY editors you love to write it.
+Karena Slidev menggunakan Markdown sebagai sumber masukan, anda dapat menggunakan editor APAPUN untuk menuliskannya.
 
-If you want some high-level management to your slides, we have provided the following editor integrations for you!
+Jika anda ingin menejemen tingkat-tinggi di slide anda, kami menyediakan integrasi editor berikut ini untuk anda!
 
-## Integrated Editor
+## Editor Terintegrasi
 
-Slidev comes with an integrated [CodeMirror](https://codemirror.net/) editor that will instantly reload and save the changes to your file. 
+Slidev menyediakan editor terintegrasi [CodeMirror](https://codemirror.net/) yang secara instan akan memuat ulang dan menyimpan perubahan ke file anda.
 
-Click the <carbon-edit class="inline-icon-btn"/> button to open it.
+Klik tombol <carbon-edit class="inline-icon-btn"/> untuk membukanya.
 
 ![](/screenshots/integrated-editor.png)
 
-## VS Code Extension
+## Ekstensi VS Code
 
 <p align="center">
     <a href="https://github.com/slidevjs/slidev" target="_blank">
@@ -28,15 +28,15 @@ Click the <carbon-edit class="inline-icon-btn"/> button to open it.
     </a>
 </p>
 
-The VS Code extension provides some features to help you better organize your slides and have a quick overview of them.
+Ekstensi VS Code menyediakan beberapa fitur untuk membantu anda mengatur slide lebih baik dan menyediakan tampilan pratinjau.
 
-### Features
+### Fitur
 
-- View slides in the side panel
-- Go to next / prev buttons
-- Re-ordering slides
-- Folding for slide blocks
-- Convert Markdown to HTML
+- Menampilkan slide di panel samping
+- Tombol pindah ke slide berikutnya/sebelumnya
+- Menyusun ulang slide
+- Lipat untuk blok geser
+- Mengubah Markdown ke HTML
 
 ![](https://user-images.githubusercontent.com/11247099/116809994-cc2caa00-ab73-11eb-879f-60585747c3c9.png)
 
