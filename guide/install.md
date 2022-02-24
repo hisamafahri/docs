@@ -1,30 +1,30 @@
-# Installation
+# Pemasangan
 
-## Starter Template
+## Template Pemula
 
-> Slidev requires [**Node.js >=14.0**](https://nodejs.org/)
+> Slidev membutuhkan [**Node.js >=14.0**](https://nodejs.org/)
 
-The best way to get started is using our official starter template.
+Cara terbaik untuk memulai adalah menggunakan template starter resmi kami.
 
-With NPM:
+Dengan NPM:
 
 ```bash
 $ npm init slidev@latest
 ```
 
-With Yarn:
+Dengan Yarn:
 
 ```bash
 $ yarn create slidev
 ```
 
-Follow the prompts and it will open up the slideshow at http://localhost:3030/ automatically for you.
+Ikuti petunjuknya dan itu akan membuka tayangan slide di http://localhost:3030/ secara otomatis untuk Anda.
 
-It also contains the basic setup and a short demo with instructions on how to get started with Slidev.
+Itu juga berisi pengaturan dasar dan demo singkat dengan instruksi tentang cara memulai Slidev.
 
-## Install Manually
+## Pemasangan Manual
 
-If you still prefer to install Slidev manually or would like to integrate it into your existing projects, you can do:
+Jika Anda masih lebih suka menginstal Slidev secara manual atau ingin mengintegrasikannya ke dalam proyek Anda yang sudah ada, Anda dapat melakukan:
 
 ```bash
 $ npm install @slidev/cli @slidev/theme-default
@@ -36,32 +36,32 @@ $ touch slides.md
 $ npx slidev
 ```
 
-> Please note if you are using [pnpm](https://pnpm.io), you will need to enable [shamefully-hoist](https://pnpm.io/npmrc#shamefully-hoist) option for Slidev to work properly:
+> Harap diperhatikan jika Anda menggunakan [pnpm](https://pnpm.io), Anda harus mengaktifkan opsi [shamefully-hoist](https://pnpm.io/npmrc#shamefully-hoist) agar Slidev berfungsi dengan baik :
 >
 > ```bash
 > echo 'shamefully-hoist=true' >> .npmrc
 > ```
 
-## Install Globally
+## Pemasangan secara Global
 
-> Available since v0.14
+> Tersedia sejak v0.14
 
-You can install Slidev globally with the following command
+Anda dapat menginstal Slidev secara global dengan perintah berikut:
 
 ```bash
 $ npm i -g @slidev/cli
 ```
 
-And then use `slidev` everywhere without creating a project every time.
+Dan kemudian gunakan `slidev` di mana saja tanpa membuat proyek setiap saat.
 
 ```bash
 $ slidev
 ```
 
-This command will also try to use local `@slidev/cli` if it has been found in the `node_modules`.
+Perintah ini juga akan mencoba menggunakan `@slidev/cli` lokal jika telah ditemukan di `node_modules`.
 
-## Install on Docker
+## Pemasangan di Docker
 
-If you need a rapid way to run a presentation with containers, you can use the prebuilt [docker](https://hub.docker.com/r/stig124/slidev) image maintained by [stig124](https://github.com/Stig124), or build your own.
+Jika Anda membutuhkan cara cepat untuk menjalankan presentasi dengan container, Anda dapat menggunakan image [docker](https://hub.docker.com/r/stig124/slidev) bawaan yang dikelola oleh [stig124](https://github .com/Stig124), atau buat *image* anda sendiri.
 
-Refer to the [slidevjs/container repo](https://github.com/slidevjs/container) for more details.
+Rujuk ke [slidevjs/container repo](https://github.com/slidevjs/container) untuk detail lebih lanjut.
