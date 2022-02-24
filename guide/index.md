@@ -1,97 +1,97 @@
-# Getting Started
+# Memulai
 
-## Overview
+## Ringkasan
 
-Slidev <sup>(slide + dev, `/slʌɪdɪv/`)</sup> is a web-based slides maker and presenter. It's designed for developers to focus on writing content in Markdown while also having the power of HTML and Vue components to deliver pixel-perfect layouts and designs with embedded interactive demos in your presentations.
+Slidev <sup>(slide + dev, `/slʌɪdɪv/`)</sup> adalah pembuat dan penyaji slide berbasis web. Ini dirancang untuk pengembang untuk fokus pada penulisan konten di Markdown sementara juga memiliki kekuatan komponen HTML dan Vue untuk memberikan tata letak dan desain piksel yang sempurna dengan demo interaktif yang disematkan di presentasi Anda.
 
-It uses a feature-rich markdown file to generate beautiful slides with an instant reloading experience, along with many built-in integrations such as live coding, PDF exporting, presentation recording, and so on. Since it's powered by the web, you can do anything with Slidev - the possibilities are endless.
+Ini menggunakan file Markdown yang kaya fitur untuk menghasilkan slide yang indah dengan pengalaman memuat ulang instan, bersama dengan banyak integrasi bawaan seperti pengkodean langsung, ekspor PDF, rekaman presentasi, dan sebagainya. Karena didukung oleh web, Anda dapat melakukan apa saja dengan Slidev - kemungkinannya tidak terbatas.
 
-You can learn more about the rationale behind the project in the [Why Slidev](/guide/why) section.
+Anda dapat mempelajari lebih lanjut tentang alasan di balik proyek di bagian [Mengapa Slidev](/guide/why).
 
-### Features
+### Fitur-fitur
 
-- 📝 [**Markdown-based**](/guide/syntax.html) - use your favorite editors and workflow
-- 🧑‍💻 [**Developer Friendly**](/guide/syntax.html#code-blocks) - built-in syntax highlighting, live coding, etc.
-- 🎨 [**Themable**](/themes/gallery.html) - theme can be shared and used with npm packages
-- 🌈 [**Stylish**](/guide/syntax.html#embedded-styles) - [Windi CSS](https://windicss.org/) on-demand utilities, easy-to-use embedded stylesheets
-- 🤹 [**Interactive**](/custom/directory-structure.html#components) - embedding Vue components seamlessly
-- 🎙 [**Presenter Mode**](/guide/presenter-mode.html) - use another window, or even your phone to control your slides
-- 🎨 [**Drawing**](/guide/drawing.html) - draw and annotate on your slides
-- 🧮 [**LaTeX**](/guide/syntax.html#latex) - built-in LaTeX math equations support
-- 📰 [**Diagrams**](/guide/syntax.html#diagrams) - creates diagrams with textual descriptions 
-- 🌟 [**Icons**](/guide/syntax.html#icons) - Access to icons from any iconset directly
-- 💻 [**Editors**](/guide/editors.html) - integrated editor, or [extension for VS Code](https://github.com/slidevjs/slidev-vscode)
-- 🎥 [**Recording**](/guide/recording.html) - built-in recording and camera view
-- 📤 [**Portable**](/guide/exporting.html) - export into PDF, PNGs, or even a hostable SPA
-- ⚡️ [**Fast**](https://vitejs.dev) - instant reloading powered by [Vite](https://vitejs.dev)
-- 🛠 [**Hackable**](/custom/config-vite.html) - using Vite plugins, Vue components, or any npm packages
+- 📝 [**Berbasis Markdown**](/guide/syntax.html) - gunakan editor dan alur kerja favorit anda.
+- 🧑‍💻 [**Ramah Pengembang**](/guide/syntax.html#code-blocks) - sintaks *highlighter* bawaan, pengkodean langsung, dll.
+- 🎨 [**Bertema**](/themes/gallery.html) - tema dapat dibagikan dan digunakan dengan paket npm
+- 🌈 [**Bergaya**](/guide/syntax.html#embedded-styles) - [Windi CSS](https://windicss.org/) utilitas sesuai permintaan, lembar gaya tertanam yang mudah digunakan
+- 🤹 [**Interaktif**](/custom/directory-structure.html#components) - menyematkan komponen Vue dengan mulus
+- 🎙 [**Mode Penampil**](/guide/presenter-mode.html) - gunakan jendela lain, atau bahkan ponsel Anda untuk mengontrol slide Anda
+- 🎨 [**Menggambar**](/guide/drawing.html) - menggambar dan membubuhi keterangan pada slide Anda
+- 🧮 [**LaTeX**](/guide/syntax.html#latex) - dukungan persamaan matematika LaTeX bawaan
+- 📰 [**Diagram**](/guide/syntax.html#diagrams) - membuat diagram dengan deskripsi tekstual
+- 🌟 [**Ikon**](/guide/syntax.html#icons) - akses ke ikon dari set ikon mana pun secara langsung
+- 💻 [**Editor**](/guide/editors.html) - editor terintegrasi, or [ekstensi untuk VS Code](https://github.com/slidevjs/slidev-vscode)
+- 🎥 [**Rekaman**](/guide/recording.html) - perekaman internal dan tampilan kamera
+- 📤 [**Portable**](/guide/exporting.html) - ekspor ke PDF, PNG, atau bahkan SPA (single-page appllication) yang dapat dihosting
+- ⚡️ [**Cepat**](https://vitejs.dev) - reload instan didukung oleh [Vite](https://vitejs.dev)
+- 🛠 [**Hackable**](/custom/config-vite.html) - menggunakan plugin Vite, komponen Vue, atau paket npm apa pun
 
 ### Tech Stack
 
-Slidev is made possible by combining these tools and technologies.
+Slidev dimungkinkan dengan menggabungkan alat dan teknologi ini.
 
-- [Vite](https://vitejs.dev) - An extremely fast frontend tooling
-- [Vue 3](https://v3.vuejs.org/) powered [Markdown](https://daringfireball.net/projects/markdown/syntax) - Focus on the content while having the power of HTML and Vue components whenever needed
-- [Windi CSS](https://github.com/windicss/windicss) - On-demand utility-first CSS framework, style your slides at ease
-- [Prism](https://github.com/PrismJS/prism), [Shiki](https://github.com/shikijs/shiki), [Monaco Editor](https://github.com/Microsoft/monaco-editor) - First-class code snippets support with live coding capability
-- [RecordRTC](https://recordrtc.org) - Built-in recording and camera view
-- [VueUse](https://vueuse.org) family -  [`@vueuse/core`](https://github.com/vueuse/vueuse), [`@vueuse/head`](https://github.com/vueuse/head), [`@vueuse/motion`](https://github.com/vueuse/motion), etc.
-- [Iconify](https://iconify.design/) - Iconsets collection.
-- [Drauu](https://github.com/antfu/drauu) - Drawing and annotations support
-- [KaTeX](https://katex.org/) - LaTeX math rendering.
-- [Mermaid](https://mermaid-js.github.io/mermaid) - Textual Diagrams.
+- [Vite](https://vitejs.dev) - Perkakas frontend yang sangat cepat
+- [Vue 3](https://v3.vuejs.org/) diberdayakan dengan [Markdown](https://daringfireball.net/projects/markdown/syntax) - Fokus pada konten sambil memiliki kekuatan komponen HTML dan Vue kapan pun dibutuhkan
+- [Windi CSS](https://github.com/windicss/windicss) - Kerangka kerja CSS utilitas pertama sesuai permintaan, style slide Anda sesuai keinginan
+- [Prism](https://github.com/PrismJS/prism), [Shiki](https://github.com/shikijs/shiki), [Monaco Editor](https://github.com/Microsoft/monaco-editor) - Dukungan cuplikan kode kelas atas dengan kemampuan pengkodean langsung
+- [RecordRTC](https://recordrtc.org) - Perekaman dan tampilan kamera bawaan
+- Keluarga [VueUse](https://vueuse.org) -  [`@vueuse/core`](https://github.com/vueuse/vueuse), [`@vueuse/head`](https://github.com/vueuse/head), [`@vueuse/motion`](https://github.com/vueuse/motion), dll.
+- [Iconify](https://iconify.design/) - Koleksi set ikon
+- [Drauu](https://github.com/antfu/drauu) - Dukungan gambar dan anotasi
+- [KaTeX](https://katex.org/) - Render matematika LaTeX
+- [Mermaid](https://mermaid-js.github.io/mermaid) - Diagram tekstual
 
-### Scaffolding Your First Presentation
+### Membuat Presentasi Pertama Anda
 
 <br>
 
-#### Try it Online
+#### Coba *Online*
 
 [sli.dev/new](https://sli.dev/new)
 
 [![](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://sli.dev/new)
 
-#### Create Locally
+#### Buat Secara Lokal
 
-With NPM:
+Dengan NPM:
 
 ```bash
 $ npm init slidev
 ```
 
-With Yarn:
+Dengan Yarn:
 
 ```bash
 $ yarn create slidev
 ```
 
-Follow the prompts and start making your slides now! For more details about the markdown syntax, read through the [syntax guide](/guide/syntax).
+Ikuti petunjuknya dan mulailah membuat slide Anda sekarang! Untuk detail lebih lanjut tentang sintaks Markdown, baca [panduan sintaks](/guide/syntax).
 
-### Command Line Interface
+### Antarmuka Baris Perintah (*Command Line Interface*)
 
-In a project where Slidev is installed, you can use the `slidev` binary in your npm scripts.
+Dalam proyek di mana Slidev diinstal, Anda dapat menggunakan biner `slidev` dalam skrip npm Anda.
 
 ```json
 {
   "scripts": {
-    "dev": "slidev", // start dev server
-    "build": "slidev build", // build for production SPA
-    "export": "slidev export" // export slides to pdf
+    "dev": "slidev", // memulai dev server
+    "build": "slidev build", // buat production SPA
+    "export": "slidev export" // ekspor slide ke PDF
   }
 }
 ```
 
-Otherwise, you can use it with [`npx`](https://www.npmjs.com/package/npx)
+Jika tidak, Anda dapat menggunakannya dengan [`npx`](https://www.npmjs.com/package/npx)
 
 ```bash
 $ npx slidev
 ```
 
-Run `slidev --help` for more options available.
+Jalankan `slidev --help` untuk opsi lain yang tersedia.
 
-### Markdown Syntax
+### Sintaks Markdown
 
-Slidev reads your `slides.md` file under your project root and converts them into slides. Whenever you made changes to it, the content of the slides will be updated immediately. For example:
+Slidev membaca file `slides.md` Anda di bawah root proyek Anda dan mengubahnya menjadi slide. Setiap kali Anda membuat perubahan, konten slide akan segera diperbarui. Sebagai contoh:
 
 ~~~md
 # Slidev
@@ -100,9 +100,9 @@ Hello World
 
 ---
 
-# Page 2
+# Halaman 2
 
-Directly use code blocks for highlighting
+Langsung gunakan blok kode untuk highlighting
 
 //```ts
 console.log('Hello, World!')
@@ -110,7 +110,7 @@ console.log('Hello, World!')
 
 ---
 
-# Page 3
+# Halaman 3
 ~~~
 
-Read more about the Slidev Markdown syntax in the [syntax guide](/guide/syntax).
+Baca lebih lanjut tentang sintaks Slidev Markdown di [panduan sintaks](/guide/syntax).
