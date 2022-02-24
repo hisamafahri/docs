@@ -1,33 +1,33 @@
-# Navigation
+# Navigasi
 
-## Navigation Bar
+## Bilah Navigasi
 
-Move your mouse to the left bottom corner of Slidev page, the navigation bar will be appeared.
+Gerakkan mouse Anda ke sudut kiri bawah halaman Slidev, bilah navigasi akan muncul.
 
 ![](/screenshots/navbar.png)
 
-| Shortcuts | Button | Description |
+| Pintasan | Tombol | Deskripsi |
 | --- | --- | --- |
-| <kbd>f</kbd> | <carbon-maximize class="inline-icon-btn"/> <carbon-minimize class="inline-icon-btn"/> | toggle fullscreen |
-| <kbd>right</kbd> / <kbd>space</kbd> | <carbon-arrow-right class="inline-icon-btn"/> | next animation or slide |
-| <kbd>left</kbd> | <carbon-arrow-left class="inline-icon-btn"/> | previous animation or slide |
-| <kbd>up</kbd> | - |  previous slide |
-| <kbd>down</kbd> | - | next slide |
-| <kbd>o</kbd> | <carbon-apps class="inline-icon-btn"/> | toggle [slides overview](#slides-overview) |
-| <kbd>d</kbd> | <carbon-sun class="inline-icon-btn"/> <carbon-moon class="inline-icon-btn"/> | toggle dark mode |
-| - | <carbon-user-avatar class="inline-icon-btn"/> | toggle [camera view](/guide/recording#camera-view) |
-| - | <carbon-video class="inline-icon-btn"/> | [recording](/guide/recording#camera-view) |
-| - | <carbon-user-speaker class="inline-icon-btn"/> | enter [presenter mode](/guide/presenter-mode) |
-| - | <carbon-edit class="inline-icon-btn"/> | toggle [integrated editor](/guide/editors#integrated-editor) |
-| - | <carbon-download class="inline-icon-btn"/> | download slides (only appear in [SPA build](/guide/exporting#single-page-application-spa)) |
-| - | <carbon-information class="inline-icon-btn"/> | show information about the slides |
-| - | <carbon-settings-adjust class="inline-icon-btn"/> | show settings menu |
-| <kbd>g</kbd> | - | show goto... |
+| <kbd>f</kbd> | <carbon-maximize class="inline-icon-btn"/> <carbon-minimize class="inline-icon-btn"/> | alihkan layar penuh |
+| <kbd>kanan</kbd> / <kbd>spasi</kbd> | <carbon-arrow-right class="inline-icon-btn"/> | animasi atau slide berikutnya |
+| <kbd>kiri</kbd> | <carbon-arrow-left class="inline-icon-btn"/> | animasi atau slide sebelumnya |
+| <kbd>atas</kbd> | - |  slide sebelumnya |
+| <kbd>bawah</kbd> | - | slide berikutnya |
+| <kbd>o</kbd> | <carbon-apps class="inline-icon-btn"/> | alihkan [pratinjau slide](#slides-overview) |
+| <kbd>d</kbd> | <carbon-sun class="inline-icon-btn"/> <carbon-moon class="inline-icon-btn"/> | alihkan mode gelap |
+| - | <carbon-user-avatar class="inline-icon-btn"/> | alihkan [tampilan kamera](/guide/recording#camera-view) |
+| - | <carbon-video class="inline-icon-btn"/> | [merekam](/guide/recording#camera-view) |
+| - | <carbon-user-speaker class="inline-icon-btn"/> | masuk ke [mode penampil](/guide/presenter-mode) |
+| - | <carbon-edit class="inline-icon-btn"/> | alihkan ke [editor terintegrasi](/guide/editors#integrated-editor) |
+| - | <carbon-download class="inline-icon-btn"/> | unduh slide (hanya muncul di [SPA build](/guide/exporting#single-page-application-spa)) |
+| - | <carbon-information class="inline-icon-btn"/> | tampilkan informasi tentang slide |
+| - | <carbon-settings-adjust class="inline-icon-btn"/> | tampilkan menu pengaturan |
+| <kbd>g</kbd> | - | tunjukkan ke... |
 
 <br>
 
-## Slides Overview
+## Pratinjau Slide
 
-By pressing <kbd>o</kbd> or clicking the <carbon-apps class="inline-icon-btn"/> button in the navigation bar, you can have the overview of your slides so you can jump between them easily. 
+Dengan menekan <kbd>o</kbd> atau klik tombol <carbon-apps class="inline-icon-btn"/> di bilah navigasi, anda dapat menampilkan pratinjau slide anda sehingga anda dapat berpindah antar slide dengan mudah.
 
 ![](/screenshots/slides-overview.png)
