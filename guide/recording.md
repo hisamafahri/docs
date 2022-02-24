@@ -1,17 +1,17 @@
-# Recording
+# Perekaman
 
-Slidev has a built-in recording and camera view. You can use them to record your presentation easily in one place.
+Slidev memiliki perekaman dan tampilan kamera bawaan. Anda dapat menggunakannya untuk merekam presentasi Anda dengan mudah di satu tempat.
 
-## Camera View
+## Tampilan Kamera
 
-Click the <carbon-user-avatar class="inline-icon-btn"/> button in the navigation panel to show your camera view in the presentation. You can drag to move it, and use the handler on the right bottom corner to resize it. The size and position will persist in `localStorage` and will therefore be consistent across multiple refreshes, so no need to worry about that.
+Klik tombol <carbon-user-avatar class="inline-icon-btn"/> di panel navigasi untuk menampilkan tampilan kamera Anda dalam presentasi. Anda dapat menyeret untuk memindahkannya, dan menggunakan pengendali di sudut kanan bawah untuk mengubah ukurannya. Ukuran dan posisi akan tetap ada di `localStorage` dan karenanya akan konsisten di beberapa penyegaran, jadi tidak perlu khawatir tentang itu.
 
 <Tweet id="1395006771027120133" />
 
-## Recording
+## Perekaman
 
-Clicking the <carbon-video class="inline-icon-btn"/> button in the navigation panel will bring up a dialog for you. Here you can choose to either record your camera embedded in your slides or to separate them into two video files.
+Mengklik tombol <carbon-video class="inline-icon-btn"/> di panel navigasi akan memunculkan dialog untuk Anda. Di sini Anda dapat memilih untuk merekam kamera yang disematkan di slide Anda atau memisahkannya menjadi dua file video.
 
-This feature is powered by [RecordRTC](https://github.com/muaz-khan/RecordRTC) and uses the [WebRTC API](https://webrtc.org/).
+Fitur ini didukung oleh [RecordRTC](https://github.com/muaz-khan/RecordRTC) dan menggunakan [WebRTC API](https://webrtc.org/).
 
 ![](/screenshots/recording.png)
