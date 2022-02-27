@@ -1,6 +1,6 @@
-# Use Theme
+# Menggunakan Tema
 
-Changing the theme in Slidev is surprisingly easy. All you need to do is to add the `theme:` field in your frontmatter.
+Mengubah tema di Slidev sangat mudah. Yang perlu Anda lakukan adalah menambahkan opsi `theme:` di frontmatter Anda.
 
 ```yaml
 ---
@@ -8,7 +8,7 @@ theme: seriph
 ---
 ```
 
-You can start the server, which will prompt you to install the theme automatically
+Anda dapat memulai server, yang akan meminta Anda untuk menginstal tema secara otomatis
 
 <div class="language-md">
 <pre>
@@ -16,25 +16,25 @@ You can start the server, which will prompt you to install the theme automatical
 </pre>
 </div>
 
-or install the theme manually via
+atau pasang secara manual melalui
 
 ```bash
 $ npm install @slidev/theme-seriph
 ```
 
-And that's all, enjoy the new theme! For more details about the usage, you can refer to the theme's README.
+Dan itu saja, nikmati tema barunya! Untuk detail lebih lanjut tentang penggunaan, Anda dapat merujuk ke README tema.
 
-Want to share your theme? Learn about [how to write a theme](/themes/write-a-theme).
+Ingin membagikan tema Anda? Pelajari tentang [cara membuat tema](/themes/write-a-theme).
 
-## Eject Theme
+## Meng-*eject* Tema
 
-If you want to get full control of the current theme, you can **eject** it to your local file system and modify it as you want. By running the following command
+Jika anda ingin kontrol penuh atas tema saat ini, anda dapat meng-*eject* tema ke sistem file lokal dan mengubahnya sesuai keinginan, dengan perintah berikut:
 
 ```bash
 $ slidev theme eject
 ```
 
-It will eject the theme you are using currently into `./theme`, and changed your frontmatter to 
+Ini akan mengeluarkan tema yang Anda gunakan saat ini ke `./theme`, dan mengubah frontmatter Anda menjadi:
 
 ```yaml
 ---
@@ -42,11 +42,12 @@ theme: ./theme
 ---
 ```
 
-This could also be helpful if you want to make a theme based on an existing one. If you do, remember to mention the original theme and the author :)
+Ini juga dapat membantu jika Anda ingin membuat tema berdasarkan tema yang sudah ada. Jika ya, ingatlah untuk menyebutkan tema asli dan penulisnya :)
 
-## Local Theme
+## Tema Lokal
 
 As you probably found out from the previous section, you can have a local theme for your project. By having a **relative path** in your theme field.
+Seperti yang mungkin Anda ketahui dari bagian sebelumnya, Anda dapat memiliki tema lokal untuk proyek Anda. Dengan memiliki **relative path** di bidang tema Anda.
 
 ```yaml
 ---
@@ -54,4 +55,4 @@ theme: ./path/to/theme
 ---
 ```
 
-Refer to [how to write a theme](/themes/write-a-theme) for more details.
+Rujuk ke bagian [bagaimana membuat tema](/themes/write-a-theme) untuk detail lebih lanjut.
