@@ -28,7 +28,6 @@ pnpm run dev
 
 Lalu kunjungi `http://localhost:3000`
 
-Or install the [Vite extension for VS Code](https://marketplace.visualstudio.com/items?itemName=antfu.vite) to edit side-by-side.
 Atau pasang [Ekstensi Vite untuk VS Code](https://marketplace.visualstudio.com/items?itemName=antfu.vite) untuk menyunting secara berdampingan.
 
 ## Bantu Terjemahkan
