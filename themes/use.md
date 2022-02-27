@@ -46,7 +46,6 @@ Ini juga dapat membantu jika Anda ingin membuat tema berdasarkan tema yang sudah
 
 ## Tema Lokal
 
-As you probably found out from the previous section, you can have a local theme for your project. By having a **relative path** in your theme field.
 Seperti yang mungkin Anda ketahui dari bagian sebelumnya, Anda dapat memiliki tema lokal untuk proyek Anda. Dengan memiliki **relative path** di bidang tema Anda.
 
 ```yaml
