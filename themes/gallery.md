@@ -1,24 +1,24 @@
-# Themes Gallery
+# Galeri Tema
 
-Browse awesome themes available for Slidev here.
+Jelajahi tema luar biasa yang tersedia di Slidev di sini.
 
-Read more about [how to use a theme](/themes/use), or [how to write your own](/themes/write-a-theme) and share with the community!
+Pelajari tentang [bagaimana menggunakan tema](/themes/use), atau [bagaimana membuat tema](/themes/write-a-theme) dan bagikan dengan komunitas!
 
-## Official Themes
+## Tema Resmi
 
 <ClientOnly>
   <ThemeGallery collection="official"/>
 </ClientOnly>
 
-## Community Themes
+## Tema komunitas
 
-Here are the curated themes made by the community.
+Berikut adalah kumpulan tema dari komunitas.
 
-<!-- Edit in ./docs/.vitepress/themes.ts -->
+<!-- Ubah di ./docs/.vitepress/themes.ts -->
 <ClientOnly>
   <ThemeGallery collection="community"/>
 </ClientOnly>
 
-## More Themes
+## Tema Lainnya
 
-Find all the [themes available on NPM](https://www.npmjs.com/search?q=keywords%3Aslidev-theme).
+Temukan semua [tema yang tersedia di NPM](https://www.npmjs.com/search?q=keywords%3Aslidev-theme).
