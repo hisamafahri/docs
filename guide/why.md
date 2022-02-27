@@ -1,70 +1,74 @@
-# Why Slidev
+# Mengapa Slidev
 
-There are a lot of feature-rich, general-purpose, WYSIWYG slides makers like [Microsoft PowerPoint](https://www.microsoft.com/en-us/microsoft-365/powerpoint) and [Apple Keynote](https://www.apple.com/keynote/). They work pretty well for making nice slides with animations, charts, and many other things, while being very intuitive and easy to learn. So why bother making Slidev?
+Ada banyak pembuat slide WYSIWYG yang kaya fitur dan serba guna seperti [Microsoft PowerPoint](https://www.microsoft.com/en-us/microsoft-365/powerpoint) dan [Apple Keynote](https://www.apple.com/keynote/). Mereka bekerja cukup baik untuk membuat slide yang bagus dengan animasi, bagan, dan banyak hal lainnya, sekaligus sangat intuitif dan mudah dipelajari. Jadi mengapa repot-repot membuat Slidev?
 
-Slidev aims to provide the flexibility and interactivity for developers to make their presentations even more interesting, expressive, and attractive by using the tools and technologies they are already familiar with. 
+Slidev bertujuan untuk memberikan fleksibilitas dan interaktivitas bagi pengembang (*developer*) untuk membuat presentasi mereka lebih menarik, ekspresif, dan atraktif dengan menggunakan alat dan teknologi yang sudah mereka kenal.
 
-When working with WYSIWYG editors, it is easy to get distracted by the styling options. Slidev remedies that by separating the content and visuals. This allows you to focus on one thing at a time, while also being able to reuse the themes from the community. Slidev does not seek to replace other slide deck builders entirely. Rather, it focuses on catering to the developer community.
+Saat bekerja dengan editor WYSIWYG, mudah terganggu oleh opsi *style*. Slidev memperbaikinya dengan memisahkan konten dan visual. Ini memungkinkan Anda untuk fokus pada satu hal pada satu waktu, sementara juga dapat menggunakan kembali tema dari komunitas. Slidev tidak berusaha untuk menggantikan pembuat dek slide lainnya sepenuhnya. Sebaliknya, ini berfokus pada katering untuk komunitas pengembang.
 
 ## Slidev
 
 ![](/screenshots/cover.png)
 
-Here are a few of the coolest features of Slidev:
+Berikut adalah beberapa fitur paling keren dari Slidev:
 
-## Markdown-based
+## Berbasis Markdown
 
-Slidev uses an extended Markdown format to store and organize your slides in a single plain text file. This lets you focus on making the content. And since the content and styles are separated, this also made it possible to switch between different themes effortlessly.
+Slidev menggunakan format markdown yang diperluas untuk menyimpan dan mengatur slide Anda dalam satu file teks biasa. Ini memungkinkan Anda fokus membuat konten. Dan karena konten dan gaya dipisahkan, ini juga memungkinkan untuk beralih di antara tema yang berbeda dengan mudah.
 
-Learn more about [Slidev's Markdown Syntax](/guide/syntax).
+Pelajari lebih lanjut tentang [Sintaks Markdown Slidedev](/guide/syntax).
 
-## Themable
+## Bertema
 
-Themes for Slidev can be shared and installed using npm packages. You then apply them with only one line of config.
+Tema untuk Slidev dapat dibagikan dan diinstal menggunakan paket npm. Anda kemudian menerapkannya hanya dengan satu baris konfigurasi.
 
-Check out the [theme gallery](/themes/gallery) or [learn how to write a theme](/themes/write-a-theme).
+Lihat [galeri tema](/themes/gallery) atau [pelajari cara menulis tema](/themes/write-a-theme).
 
-## Developer Friendly
+## Ramah Pengembang
 
 Slidev provides first-class support for code snippets for developers. It supports both [Prism](https://prismjs.com/) and [Shiki](https://github.com/shikijs/shiki) to get pixel perfect syntax highlighting, while still being able to modify the code at any time. With [Monaco editor](https://microsoft.github.io/monaco-editor/) built-in, it also empowers you to do live coding / demonstration in your presentation with autocompletion, type hovering, and even TypeScript type check support.
 
 Learn more about [highlighters](/custom/highlighters) and [Monaco configuration](/custom/config-monaco).
 
-## Fast
+Slidev menyediakan dukungan kelas satu untuk *snippet* kode untuk pengembang. Slidev mendukung [Prism](https://prismjs.com/) dan [Shiki](https://github.com/shikijs/shiki) untuk mendapatkan sintaks *highlighter* yang *pixel-perfect*, sembari tetap dapat memodifikasi kode kapan saja waktu. Dengan [Monaco editor](https://microsoft.github.io/monaco-editor/) secara bawaan, Slidev juga memberdayakan Anda untuk melakukan live coding/demonstrasi dalam presentasi Anda dengan pelengkapan otomatis, *type hovering*, dan bahkan dukungan pemeriksaan jenis TypeScript .
 
-Slidev is powered by [Vite](https://vitejs.dev/), [Vue 3](https://v3.vuejs.org/) and [Windi CSS](https://windicss.org/), which give you the most wonderful authoring experience. Every change you made will reflect to your slides **instantly**.
+Pelajari lebih lanjut tentang [highlighters](/custom/highlighters) dan [konfigurasi Monaco](/custom/config-monaco).
 
-Find more about [our tech stack](/guide/#tech-stack).
+## Cepat
 
-## Interactive & Expressive
+Slidev didukung oleh [Vite](https://vitejs.dev/), [Vue 3](https://v3.vuejs.org/) dan [Windi CSS](https://windicss.org/), yang memberi Anda pengalaman menulis yang paling indah. Setiap perubahan yang Anda buat akan tercermin pada slide Anda **secara instan**.
 
-You can write custom Vue components and use them directly inside your markdown file. You can also interact with them inside the presentation to express your idea in a more interesting and intuitive way.
+Temukan selengkapnya tentang [tech stack](/guide/#tech-stack).
 
-## Recording Support
+## Interaktif & Ekspresif
 
-Slidev provides built-in recording and camera view. You can share your presentation with your camera view inside, or record and save them separately for your screen and camera. All with one go, no additional tools are needed.
+Anda dapat menulis komponen Vue khusus dan menggunakannya langsung di dalam file markdown Anda. Anda juga dapat berinteraksi dengannya di dalam presentasi untuk mengekspresikan ide Anda dengan cara yang lebih menarik dan intuitif.
 
-Learn more about [recording here](/guide/recording).
+## Dukungan Perekaman
 
-## Portable
+Slidev menyediakan perekaman dan tampilan kamera bawaan. Anda dapat membagikan presentasi Anda dengan tampilan kamera di dalam, atau merekam dan menyimpannya secara terpisah untuk layar dan kamera Anda. Semua dengan sekali jalan, tidak diperlukan alat tambahan.
 
-Export your slides into PDF, PNGs, or even a hostable Single-page Application (SPA) with a single command, and share them anywhere.
+Pelajari lebih lanjut tentang merekam [di sini](/guide/recording).
 
-Read more about that in the [exporting docs](/guide/exporting).
+## Portabel
 
-## Hackable
+Ekspor slide Anda ke PDF, PNG, atau bahkan Aplikasi Satu Halaman (*Single-Page Application*/SPA) yang dapat dihosting dengan satu perintah, dan bagikan di mana saja.
 
-Being powered by web technologies, anything that can be done in a web app is also possible with Slidev. For example, WebGL, API requests, iframes, or even live sharing. It's up to your imagination!
+Baca lebih lanjut di bagian [mengekspor dokumen](/panduan/mengekspor).
 
-## Give it a Try
+## *Hackable*
 
-Playing around with Slidev will tell you more than a thousand words. You are just one command away:
+Didukung oleh teknologi web, apa pun yang dapat dilakukan di aplikasi web juga dimungkinkan dengan Slidev. Misalnya, WebGL, API *request*, iframe, atau bahkan berbagi langsung. Terserah imajinasi Anda!
+
+## Cobalah
+
+Bermain-main dengan Slidev akan memberi tahu Anda lebih dari seribu kata. Anda hanya berjarak satu perintah:
 
 ```bash
 $ npm init slidev
 ```
 
-Or have a quick preview of it:
+Atau lihat pratinjau singkatnya:
 
 <div class="aspect-9/16 relative">
 <iframe class="rounded w-full shadow-md border-none" src="https://www.youtube.com/embed/eW7v-2ZKZOU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
