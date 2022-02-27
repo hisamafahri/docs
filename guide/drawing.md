@@ -1,4 +1,4 @@
-# Gambar & Anotasi
+# Menggambar & Anotasi
 
 > Tersedia sejak v0.23
 

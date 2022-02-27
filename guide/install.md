@@ -62,6 +62,6 @@ Perintah ini juga akan mencoba menggunakan `@slidev/cli` lokal jika telah ditemu
 
 ## Pemasangan di Docker
 
-Jika Anda membutuhkan cara cepat untuk menjalankan presentasi dengan container, Anda dapat menggunakan image [docker](https://hub.docker.com/r/stig124/slidev) bawaan yang dikelola oleh [stig124](https://github .com/Stig124), atau buat *image* anda sendiri.
+Jika Anda membutuhkan cara cepat untuk menjalankan presentasi dengan container, Anda dapat menggunakan image [docker](https://hub.docker.com/r/stig124/slidev) bawaan yang dikelola oleh [stig124](https://github.com/Stig124), atau buat *image* anda sendiri.
 
 Rujuk ke [slidevjs/container repo](https://github.com/slidevjs/container) untuk detail lebih lanjut.

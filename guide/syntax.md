@@ -195,7 +195,7 @@ Ini halaman sampul.
 
 # Halaman 2
 
-<!-- Ini BUKAN catatn karena mendahului konten slide -->
+<!-- Ini BUKAN catatan karena mendahului konten slide -->
 
 Halaman kedua
 
@@ -327,7 +327,7 @@ background: 'https://source.unsplash.com/1600x900/?nature,water'
 This is the cover page.
 ```
 
-Pelajari lebih lanjut tentang [konfigurasi frontmatter](/custom/#frontmatter-configures).
+Pelajari lebih lanjut tentang [konfigurasi frontmatter](/custom/#konfigurasi-frontmatter).
 
 ## LaTeX
 

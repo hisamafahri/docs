@@ -6,7 +6,7 @@ Untuk memulai, kami sarankan Anda menggunakan generator kami untuk membuat peran
 $ npm init slidev-theme
 ```
 
-Then you can modify and play with it. You can also refer to the [official themes](/themes/gallery) as examples.
+Kemudian Anda dapat memodifikasi dan memainkannya. Anda juga dapat merujuk ke [tema resmi](/themes/gallery) sebagai contoh.
 
 ## Kapabilitas
 
@@ -58,7 +58,7 @@ Poin kontribusi tema mengikuti konvensi yang sama seperti penyesuaian lokal, sil
 
 > Tersedia sejak v0.19
 
-Sebuah tema dapat menyediakan [konfigurasi](/custom/#frontmatter-configures) default melalui `package.json`.
+Sebuah tema dapat menyediakan [konfigurasi](/custom/#konfigurasi-frontmatter) default melalui `package.json`.
 
 ```json
 // package.json
@@ -78,7 +78,7 @@ Sebuah tema dapat menyediakan [konfigurasi](/custom/#frontmatter-configures) def
 
 Font akan diimpor secara otomatis dari [Google Font](https://fonts.google.com/).
 
-Pelajari lebih lanjut tentang [font](/custom/fonts) dan [konfigurasi frontmatter](/custom/#frontmatter-configures).
+Pelajari lebih lanjut tentang [font](/custom/fonts) dan [konfigurasi frontmatter](/custom/#konfigurasi-frontmatter).
 
 ## Metadata Tema
 

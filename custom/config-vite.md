@@ -43,4 +43,4 @@ export default defineConfig({
 })
 ```
 
-Lihat [type declarations](https://github.com/slidevjs/slidev/blob/main/packages/slidev/node/options.ts#L50) untuk opsi lainnya.
+Lihat [deklarasi tipe](https://github.com/slidevjs/slidev/blob/main/packages/slidev/node/options.ts#L50) untuk opsi lainnya.

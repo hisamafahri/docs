@@ -11,4 +11,4 @@ background: https://source.unsplash.com/collection/94734566/1920x1080
 ---
 ```
 
-Jika Anda menyukai salah satunya, lihat [Koleksi Unsplash](https://unsplash.com/collections/94734566/slidev) kami dan temukan penulisnya.
+Jika Anda menyukai salah satunya, lihat [koleksi Unsplash](https://unsplash.com/collections/94734566/slidev) kami dan temukan penulisnya.

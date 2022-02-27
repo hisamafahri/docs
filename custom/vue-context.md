@@ -51,7 +51,7 @@ Untuk properti yang tersedia, rujuk ke ekspor [nav.ts](https://github.com/slidev
 
 ### `$slidev.configs`
 
-Objek reaktif yang menyimpan [konfigurasi di frontmatter pertama](/custom/#frontmatter-configures) yang diurai dari `slides.md` anda. Sebagai contoh:
+Objek reaktif yang menyimpan [konfigurasi di frontmatter pertama](/custom/#konfigurasi-frontmatter) yang diurai dari `slides.md` anda. Sebagai contoh:
 
 ```yaml
 ---

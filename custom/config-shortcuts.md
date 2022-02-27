@@ -25,7 +25,7 @@ export default defineShortcutsSetup((nav: NavOperations) => {
 })
 ```
 
-Dengan pengaturan ini, anda dapat menyediakan pengaturan kusto untuk *shortcuts* di bagian [Navigation](/guide/navigation#navigation-bar). Konfigurasi di atas mengikat animasi atau slide berikutnya ke <kbd>enter</kbd> dan animasi atau slide sebelumnya ke <kbd>backspace</kbd>.
+Dengan pengaturan ini, anda dapat menyediakan pengaturan kusto untuk *shortcuts* di bagian [navigasi](/guide/navigation#bilah-navigasi). Konfigurasi di atas mengikat animasi atau slide berikutnya ke <kbd>enter</kbd> dan animasi atau slide sebelumnya ke <kbd>backspace</kbd>.
 
 Fungsi konfigurasi menerima sebuah objek dengan beberapa metode navigasi, dan mengembalikan sebuah *array* yang mengandung beberapa konfigurasi *shortcut*. Rujuk ke definisi tipe untuk detail lebih lanjut.
 

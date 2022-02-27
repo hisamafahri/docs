@@ -47,7 +47,7 @@ Berikut adalah beberapa contoh SPA yang telah diekspor:
 - [Template Pemula](https://sli.dev/demo/starter)
 - [Composable Vue](https://talks.antfu.me/2021/composable-vue) oleh [Anthony Fu](https://github.com/antfu)
 
-Untuk lebih banyak, Kunjung [Pameran](/showcases).
+Untuk lebih banyak, kunjungi [pameran](/showcases).
 
 ## Hosting
 

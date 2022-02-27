@@ -26,19 +26,15 @@ Lihat [galeri tema](/themes/gallery) atau [pelajari cara menulis tema](/themes/w
 
 ## Ramah Pengembang
 
-Slidev provides first-class support for code snippets for developers. It supports both [Prism](https://prismjs.com/) and [Shiki](https://github.com/shikijs/shiki) to get pixel perfect syntax highlighting, while still being able to modify the code at any time. With [Monaco editor](https://microsoft.github.io/monaco-editor/) built-in, it also empowers you to do live coding / demonstration in your presentation with autocompletion, type hovering, and even TypeScript type check support.
-
-Learn more about [highlighters](/custom/highlighters) and [Monaco configuration](/custom/config-monaco).
-
 Slidev menyediakan dukungan kelas satu untuk *snippet* kode untuk pengembang. Slidev mendukung [Prism](https://prismjs.com/) dan [Shiki](https://github.com/shikijs/shiki) untuk mendapatkan sintaks *highlighter* yang *pixel-perfect*, sembari tetap dapat memodifikasi kode kapan saja waktu. Dengan [Monaco editor](https://microsoft.github.io/monaco-editor/) secara bawaan, Slidev juga memberdayakan Anda untuk melakukan live coding/demonstrasi dalam presentasi Anda dengan pelengkapan otomatis, *type hovering*, dan bahkan dukungan pemeriksaan jenis TypeScript .
 
-Pelajari lebih lanjut tentang [highlighters](/custom/highlighters) dan [konfigurasi Monaco](/custom/config-monaco).
+Pelajari lebih lanjut tentang [highlighter](/custom/highlighters) dan [konfigurasi Monaco](/custom/config-monaco).
 
 ## Cepat
 
 Slidev didukung oleh [Vite](https://vitejs.dev/), [Vue 3](https://v3.vuejs.org/) dan [Windi CSS](https://windicss.org/), yang memberi Anda pengalaman menulis yang paling indah. Setiap perubahan yang Anda buat akan tercermin pada slide Anda **secara instan**.
 
-Temukan selengkapnya tentang [tech stack](/guide/#tech-stack).
+Temukan selengkapnya tentang [tech stack](/guide/#tech-stack) Slidev.
 
 ## Interaktif & Ekspresif
 
@@ -54,7 +50,7 @@ Pelajari lebih lanjut tentang merekam [di sini](/guide/recording).
 
 Ekspor slide Anda ke PDF, PNG, atau bahkan Aplikasi Satu Halaman (*Single-Page Application*/SPA) yang dapat dihosting dengan satu perintah, dan bagikan di mana saja.
 
-Baca lebih lanjut di bagian [mengekspor dokumen](/panduan/mengekspor).
+Baca lebih lanjut di bagian [mengekspor dokumen](/guide/exporting).
 
 ## *Hackable*
 

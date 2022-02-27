@@ -4,7 +4,7 @@ sidebar: false
 
 # Pameran
 
-Seminar / Persentasi menggunakan Slidev.
+Seminar/persentasi yang menggunakan Slidev.
 
 <!-- Edit in ./docs/.vitepress/showcases.ts -->
 <ShowCases />

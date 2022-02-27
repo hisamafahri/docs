@@ -1,12 +1,12 @@
-# Tata Letak Global
+# Layer Global
 
 > Tersedia sejak v0.17
 
-Tata letak global memungkinkan anda untuk memiliki komponen kustom yang **tetap** di seluruh slide. Hal ini dapat berguna untuk *footer*, animasi antar slide, efek global, dll.
+Layer global memungkinkan anda untuk memiliki komponen kustom yang **tetap** di seluruh slide. Hal ini dapat berguna untuk *footer*, animasi antar slide, efek global, dll.
 
 Slidev menyediakan dua lapis untuk penggunaan ini, buat `global-top.vue` atau `global-bottom.vue` di *root* projek anda dan Slidev akan menghubungkannya secara otomatis.
 
-Hubungan tata letak:
+Hubungan layer:
 
 - Global Atas (`global-top.vue`)
 - Slide
@@ -38,7 +38,7 @@ Untuk mengaktifkannya secara kondisional, anda dapat menambahkannya dengan [Vue 
 ```
 
 ```html
-<!-- menyembunyikan *footer* dari tata letak "cover" -->
+<!-- menyembunyikan *footer* dari layer "cover" -->
 <template>
   <footer
     v-if="$slidev.nav.currentLayout !== 'cover'"

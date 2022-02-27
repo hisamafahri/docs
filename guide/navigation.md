@@ -13,13 +13,13 @@ Gerakkan mouse Anda ke sudut kiri bawah halaman Slidev, bilah navigasi akan munc
 | <kbd>kiri</kbd> | <carbon-arrow-left class="inline-icon-btn"/> | animasi atau slide sebelumnya |
 | <kbd>atas</kbd> | - |  slide sebelumnya |
 | <kbd>bawah</kbd> | - | slide berikutnya |
-| <kbd>o</kbd> | <carbon-apps class="inline-icon-btn"/> | alihkan [pratinjau slide](#slides-overview) |
+| <kbd>o</kbd> | <carbon-apps class="inline-icon-btn"/> | alihkan [pratinjau slide](#pratinjau-slide) |
 | <kbd>d</kbd> | <carbon-sun class="inline-icon-btn"/> <carbon-moon class="inline-icon-btn"/> | alihkan mode gelap |
-| - | <carbon-user-avatar class="inline-icon-btn"/> | alihkan [tampilan kamera](/guide/recording#camera-view) |
-| - | <carbon-video class="inline-icon-btn"/> | [merekam](/guide/recording#camera-view) |
+| - | <carbon-user-avatar class="inline-icon-btn"/> | alihkan [tampilan kamera](/guide/recording#tampilan-kamera) |
+| - | <carbon-video class="inline-icon-btn"/> | [merekam](/guide/recording#perekaman-1) |
 | - | <carbon-user-speaker class="inline-icon-btn"/> | masuk ke [mode penampil](/guide/presenter-mode) |
-| - | <carbon-edit class="inline-icon-btn"/> | alihkan ke [editor terintegrasi](/guide/editors#integrated-editor) |
-| - | <carbon-download class="inline-icon-btn"/> | unduh slide (hanya muncul di [SPA build](/guide/exporting#single-page-application-spa)) |
+| - | <carbon-edit class="inline-icon-btn"/> | alihkan ke [editor terintegrasi](/guide/editors#editor-terintegrasi) |
+| - | <carbon-download class="inline-icon-btn"/> | unduh slide (hanya muncul di [SPA build](/guide/exporting#aplikasi-satu-halaman-single-page-application-spa)) |
 | - | <carbon-information class="inline-icon-btn"/> | tampilkan informasi tentang slide |
 | - | <carbon-settings-adjust class="inline-icon-btn"/> | tampilkan menu pengaturan |
 | <kbd>g</kbd> | - | tunjukkan ke... |

@@ -11,15 +11,15 @@ Anda dapat mempelajari lebih lanjut tentang alasan di balik proyek di bagian [Me
 ### Fitur-fitur
 
 - 📝 [**Berbasis Markdown**](/guide/syntax.html) - gunakan editor dan alur kerja favorit anda.
-- 🧑‍💻 [**Ramah Pengembang**](/guide/syntax.html#code-blocks) - sintaks *highlighter* bawaan, pengkodean langsung, dll.
+- 🧑‍💻 [**Ramah Pengembang**](/guide/syntax.html#blok-kode) - sintaks *highlighter* bawaan, pengkodean langsung, dll.
 - 🎨 [**Bertema**](/themes/gallery.html) - tema dapat dibagikan dan digunakan dengan paket npm
 - 🌈 [**Bergaya**](/guide/syntax.html#embedded-styles) - [Windi CSS](https://windicss.org/) utilitas sesuai permintaan, lembar gaya tertanam yang mudah digunakan
-- 🤹 [**Interaktif**](/custom/directory-structure.html#components) - menyematkan komponen Vue dengan mulus
+- 🤹 [**Interaktif**](/custom/directory-structure.html#komponen-components) - menyematkan komponen Vue dengan mulus
 - 🎙 [**Mode Penampil**](/guide/presenter-mode.html) - gunakan jendela lain, atau bahkan ponsel Anda untuk mengontrol slide Anda
 - 🎨 [**Menggambar**](/guide/drawing.html) - menggambar dan membubuhi keterangan pada slide Anda
 - 🧮 [**LaTeX**](/guide/syntax.html#latex) - dukungan persamaan matematika LaTeX bawaan
-- 📰 [**Diagram**](/guide/syntax.html#diagrams) - membuat diagram dengan deskripsi tekstual
-- 🌟 [**Ikon**](/guide/syntax.html#icons) - akses ke ikon dari set ikon mana pun secara langsung
+- 📰 [**Diagram**](/guide/syntax.html#diagram) - membuat diagram dengan deskripsi tekstual
+- 🌟 [**Ikon**](/guide/syntax.html#ikon) - akses ke ikon dari set ikon mana pun secara langsung
 - 💻 [**Editor**](/guide/editors.html) - editor terintegrasi, or [ekstensi untuk VS Code](https://github.com/slidevjs/slidev-vscode)
 - 🎥 [**Rekaman**](/guide/recording.html) - perekaman internal dan tampilan kamera
 - 📤 [**Portable**](/guide/exporting.html) - ekspor ke PDF, PNG, atau bahkan SPA (single-page appllication) yang dapat dihosting
