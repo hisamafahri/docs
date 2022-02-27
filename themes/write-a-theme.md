@@ -1,6 +1,6 @@
-# Write a Theme
+# Membuat Tema
 
-To get started, we recommend you use our generator for scaffolding your first theme
+Untuk memulai, kami sarankan Anda menggunakan generator kami untuk membuat perancah tema pertama Anda
 
 ```bash
 $ npm init slidev-theme
@@ -8,27 +8,27 @@ $ npm init slidev-theme
 
 Then you can modify and play with it. You can also refer to the [official themes](/themes/gallery) as examples.
 
-## Capability
+## Kapabilitas
 
-A theme can contribute to the following points:
+Sebuah tema dapat berkontribusi pada poin-poin berikut:
 
-- Global styles
-- Provide default configurations (fonts, color schema, highlighters, etc.)
-- Provide custom layouts or override the existing one
-- Provide custom components or override the existing one
-- Extend Windi CSS configurations
-- Configure tools like Monaco and Prism
+- Gaya global
+- Menyediakan konfigurasi default (font, skema warna, *highlighter*, dll.)
+- Memberikan tata letak khusus atau timpa yang sudah ada
+- Memberikan komponen khusus atau timpa yang sudah ada
+- Memperluas konfigurasi Windi CSS
+- Konfigurasikan alat seperti Monaco dan Prism
 
-## Conventions
+## Konvensi
 
-Themes are published to npm registry, and they should follow the conventions below:
+Tema diterbitkan ke registri npm, dan harus mengikuti konvensi di bawah ini:
 
-- Package name should start with `slidev-theme-`, for example: `slidev-theme-awesome`
-- Add `slidev-theme` and `slidev` in the `keywords` field of your `package.json`
+- Nama paket harus diawali dengan `slidev-theme-`, misalnya: `slidev-theme-awesome`
+- Tambahkan `slidev-theme` dan `slidev` di bidang `keywords` dari `package.json` Anda
 
-## Setup
+## Persiapan
 
-To set up the testing playground for your theme, you can create `example.md` with the following frontmatter, to tell Slidev you are using the current directory as a theme.
+Untuk menyiapkan *testing playground* untuk tema Anda, Anda dapat membuat `example.md` dengan frontmatter berikut, untuk memberi tahu Slidev bahwa Anda menggunakan direktori saat ini sebagai tema.
 
 ```md
 ---
@@ -36,7 +36,7 @@ theme: ./
 ---
 ```
 
-Optionally, you can also add some scripts to your `packages.json`
+Secara opsional, Anda juga dapat menambahkan beberapa skrip ke `packages.json` Anda:
 
 ```json
 // package.json
@@ -50,15 +50,15 @@ Optionally, you can also add some scripts to your `packages.json`
 }
 ```
 
-To publish your theme, simply run `npm publish` and you are good to go. There is no build process required (which means you can directly publish `.vue` and `.ts` files, Slidev is smart enough to understand them).
+Untuk mempublikasikan tema Anda, cukup jalankan `npm publish` dan Anda telah siap. Tidak diperlukan proses build (yang berarti Anda dapat langsung memublikasikan file `.vue` dan `.ts`, Slidev cukup pintar untuk memahaminya).
 
-Theme contribution points follow the same conventions as local customization, please refer to [the docs for the naming conventions](/custom/). 
+Poin kontribusi tema mengikuti konvensi yang sama seperti penyesuaian lokal, silakan merujuk ke [dokumen untuk konvensi penamaan](/custom/).
 
-## Default Configurations
+## Konfigurasi Default
 
-> Available since v0.19
+> Tersedia sejak v0.19
 
-A theme can provide default [configurations](/custom/#frontmatter-configures) via `package.json`.
+Sebuah tema dapat menyediakan [konfigurasi](/custom/#frontmatter-configures) default melalui `package.json`.
 
 ```json
 // package.json
@@ -76,15 +76,15 @@ A theme can provide default [configurations](/custom/#frontmatter-configures) vi
 }
 ```
 
-Fonts will be auto imported from [Google Fonts](https://fonts.google.com/).
+Font akan diimpor secara otomatis dari [Google Font](https://fonts.google.com/).
 
-Learn more about [fonts](/custom/fonts) and [frontmatter configurations](/custom/#frontmatter-configures).
+Pelajari lebih lanjut tentang [font](/custom/fonts) dan [konfigurasi frontmatter](/custom/#frontmatter-configures).
 
-## Theme Metadata
+## Metadata Tema
 
-### Color Schema
+### Skema Warna
 
-By default, Slidev assumes themes support both light mode and dark mode. If you only want your theme be presented in a designed color schema, you will need to specify it explicitly in `package.json`
+Secara default, Slidev menganggap tema mendukung mode terang dan mode gelap. Jika Anda hanya ingin tema Anda ditampilkan dalam skema warna yang dirancang, Anda perlu menentukannya secara eksplisit di `package.json`
 
 ```json
 // package.json
@@ -95,47 +95,47 @@ By default, Slidev assumes themes support both light mode and dark mode. If you 
     "slidev"
   ],
   "slidev": {
-    "colorSchema": "light" // or "dark" or "both"
+    "colorSchema": "light" // atau "dark" atau "both"
   }
 }
 ```
 
-To access the dark mode when creating your theme styles, you can wrap the dark-mode-specific css inside a `dark` class:
+Untuk mengakses mode gelap saat membuat gaya tema, Anda dapat membungkus css khusus mode gelap di dalam kelas `dark`:
 
 ```css
-/* general css here */
+/* css umum di sini */
 
 html:not(.dark) {
-  /* light mode css here */
+  /* lcss mode terang di sini */
 }
 
 html.dark {
-  /* dark mode css here */
+  /* css mode gelap di sini */
 }
 ```
 
-Slidev toggles a `dark` class on the page's `html` element for switching color schema.
+Slidev mengaktifkan kelas `dark` pada elemen `html` halaman untuk beralih skema warna.
 
 ### Highlighter
 
-Syntax highlighting colors are also provided in the theme. We support both [Prism](https://prismjs.com/) and [Shiki](https://github.com/shikijs/shiki). For more information please refer to [the syntax highlighting docs](/custom/highlighters).
+Warna highlighter sintaks juga disediakan dalam tema. Kami mendukung [Prism](https://prismjs.com/) dan [Shiki](https://github.com/shikijs/shiki). Untuk informasi lebih lanjut, lihat [dokumentasi highlight sintaks](/custom/highlighters).
 
-You can support either one of them, or both. Refer to the default theme for configurations examples [`./styles/code.css`](https://github.com/slidevjs/slidev/blob/main/packages/create-theme/template/styles/code.css) / [`./setup/shiki.ts`](https://github.com/slidevjs/slidev/blob/main/packages/create-theme/template/setup/shiki.ts).
+Anda dapat mendukung salah satu dari mereka, atau keduanya. Lihat tema default untuk contoh konfigurasi [`./styles/code.css`](https://github.com/slidevjs/slidev/blob/main/packages/create-theme/template/styles/code.css) / [`./setup/shiki.ts`](https://github.com/slidevjs/slidev/blob/main/packages/create-theme/template/setup/shiki.ts).
 
-Also, remember to specify the supported highlighters in your `package.json`
+Juga, ingatlah untuk menentukan highlighter yang didukung di `package.json` . Anda
 
 ```json
 // package.json
 {
   "slidev": {
-    "highlighter": "shiki" // or "prism" or "all"
+    "highlighter": "shiki" // atau "prism" atau "all"
   }
 }
 ```
 
-### Slidev Version
+### Versi Slidev
 
-If the theme is relying on a specific feature of Slidev that are newly introduced, you can set the minimal Slidev version required to have your theme working properly:
+Jika tema mengandalkan fitur khusus Slidev yang baru diperkenalkan, Anda dapat mengatur versi Slidev minimal yang diperlukan agar tema Anda berfungsi dengan baik:
 
 ```json
 // package.json
@@ -146,4 +146,4 @@ If the theme is relying on a specific feature of Slidev that are newly introduce
 }
 ```
 
-If users are using older versions of Slidev, an error will be thrown.
+Jika pengguna menggunakan versi Slidev yang lebih lama, eror akan muncul.
