@@ -1,8 +1,8 @@
-# Markdown Syntax
+# Sintaks Markdown
 
-Slides are written within **a single markdown file** (by default `./slides.md`). 
+Slide ditulis dalam **satu file markdowna** (secara default `./slides.md`).
 
-You can use [the Markdown features](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) as you normally would, with the additional support of inlined HTML and Vue Components. Styling using [Windi CSS](https://windicss.org) is also supported. Use `---` padded with a new line to separate your slides. 
+Anda dapat menggunakan [fitur markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) seperti biasa, dengan dukungan tambahan dari HTML dan Komponen Vue. Penataan gaya menggunakan [Windi CSS](https://windicss.org) juga didukung. Gunakan `---` di baris baru untuk memisahkan slide Anda.
 
 ~~~md
 # Slidev
@@ -11,9 +11,9 @@ Hello, World!
 
 ---
 
-# Page 2
+# Halaman 2
 
-Directly use code blocks for highlighting
+Langsung gunakan blok kode untuk hignlighting
 
 //```ts
 console.log('Hello, World!')
@@ -21,18 +21,18 @@ console.log('Hello, World!')
 
 ---
 
-# Page 3
+# Halaman 3
 
-You can directly use Windi CSS and Vue components to style and enrich your slides.
+Anda dapat langsung menggunakan komponen Windi CSS dan Vue untuk menata dan memperkaya slide Anda.
 
 <div class="p-3">
   <Tweet id="20" />
 </div>
 ~~~
 
-## Front Matter & Layouts
+## Frontmatter & Tata Letak
 
-Specify layouts and other metadata for each slide by converting the separators into [front matter blocks](https://jekyllrb.com/docs/front-matter/). Each frontmatter starts with a triple-dash and ends with another. Texts between them are data objects in [YAML](https://www.cloudbees.com/blog/yaml-tutorial-everything-you-need-get-started/) format. For example:
+Tentukan tata letak dan metadata lainnya untuk setiap slide dengan mengonversi pemisah menjadi [blok frontmatter](https://jekyllrb.com/docs/front-matter/). Setiap frontmatter dimulai dengan tanda hubung tiga dan diakhiri dengan tanda hubung lainnya. Teks di antaranya adalah objek data dalam format [YAML](https://www.cloudbees.com/blog/yaml-tutorial-everything-you-need-get-started/). Sebagai contoh:
 
 ~~~md
 ---
@@ -41,7 +41,7 @@ layout: cover
 
 # Slidev
 
-This is the cover page.
+Ini adalah halaman sampul.
 
 ---
 layout: center
@@ -49,22 +49,22 @@ background: './images/background-1.png'
 class: 'text-white'
 ---​
 
-# Page 2
+# Halaman 2
 
-This is a page with the layout `center` and a background image.
+Ini adalah halaman dengan tata letak `center` dan gambar latar belakang.
 
 ---
 
-# Page 3
+# Halaman 3
 
-This is a default page without any additional metadata.
+Ini adalah halaman default tanpa metadata tambahan.
 ~~~
 
-Refer to [customization](/custom/) for more details.
+Rujuk ke bagian [kustomisasi](/custom/) untuk detail lebih lanjut.
 
-## Code Blocks
+## Blok Kode
 
-One big reason I am building Slidev is needing to make my code look just right in the slides. So just as you expected, you can use Markdown flavored code block to highlight your code.
+Salah satu alasan utama saya membangun Slidev adalah membuat kode saya terlihat tepat di slide. Jadi seperti yang Anda harapkan, Anda dapat menggunakan blok kode dengan Markdown untuk *highlight* kode Anda.
 
 ~~~ts
 //```ts
@@ -72,11 +72,11 @@ console.log('Hello, World!')
 //```
 ~~~
 
-We support [Prism](http://prismjs.com) and [Shiki](https://github.com/shikijs/shiki) as syntax highlighters. Refer to [the highlighters section](/custom/highlighters) for more details.
+Kami mendukung [Prism](http://prismjs.com) dan [Shiki](https://github.com/shikijs/shiki) sebagai highlighter sintaks. Rujuk ke bagian [highlighter](/custom/highlighters) untuk detail lebih lanjut.
 
-### Line Highlighting
+### Highlight Baris
 
-To highlight specific lines, simply add line numbers within bracket `{}`. Line numbers start counting from 1.
+Untuk menyorot baris tertentu, cukup tambahkan nomor baris di dalam tanda kurung `{}`. Nomor baris dimulai dari 1.
 
 ~~~ts
 //```ts {2,3}
@@ -89,7 +89,7 @@ function add(
 //```
 ~~~
 
-To change the highlight in multiple steps, you can use `|` to separate them. For example
+Untuk mengubah highlight dalam beberapa langkah, Anda dapat menggunakan `|` untuk memisahkannya. Sebagai contoh:
 
 ~~~ts
 //```ts {2-3|5|all}
@@ -102,11 +102,11 @@ function add(
 //```
 ~~~
 
-This will first highlight `a: Ref<number> | number` and `b: Ref<number> | number`, and then `return computed(() => unref(a) + unref(b))` after one click, and lastly, the whole block. Learn more in the [clicks animations guide](/guide/animations).
+Ini pertama-tama akan menyorot `a: Ref<number> | number` dan `b: Ref<number> | number`, lalu `return computed(() => unref(a) + unref(b))` setelah satu klik, dan terakhir, seluruh blok. Pelajari lebih lanjut di [panduan animasi](/guide/animations).
 
-### Monaco Editor
+### Editor Monaco
 
-Whenever you want to do some modification in the presentation, simply add `{monaco}` after the language id — it turns the block into a fully-featured Monaco editor!
+Kapan pun Anda ingin melakukan beberapa modifikasi dalam presentasi, cukup tambahkan `{monaco}` setelah id bahasa — itu mengubah blok menjadi editor Monaco berfitur lengkap!
 
 ~~~ts
 //```ts {monaco}
@@ -114,14 +114,14 @@ console.log('HelloWorld')
 //```
 ~~~
 
-Learn more about [configuring Monaco](/custom/config-monaco).
+Pelajari lebih lanjut di bagian [konfigurasi Monaco](/custom/config-monaco).
 
-## Embedded Styles
+## *Embedded Styles*
 
-You can use `<style>` tag in your Markdown directly to override styles for the **current slide**.
+Anda dapat menggunakan tag `<style>` di Markdown secara langsung untuk mengganti gaya untuk **slide saat ini**.
 
 ```md
-# This is Red
+# Ini Merah
 
 <style>
 h1 {
@@ -131,12 +131,12 @@ h1 {
 
 ---
 
-# Next slide is not affected
+# Slide selanjutnya tidak terpengaruh
 ```
 
-`<style>` tag in Markdown is always [scoped](https://vue-loader.vuejs.org/guide/scoped-css.html). To have global style overrides, check out the [customization section](/custom/directory-structure#style).
+Tag `<style>` di Markdown selalu bersifat [scoped](https://vue-loader.vuejs.org/guide/scoped-css.html). Untuk mengganti style secara global, lihat [bagian kustomisasi](/custom/directory-structure#style).
 
-Powered by [Windi CSS](https://windicss.org), you can directly use nested css and [directives](https://windicss.org/features/directives.html) (e.g. `@apply`)
+Didukung oleh [Windi CSS](https://windicss.org), Anda dapat langsung menggunakan *nested css* dan [directives](https://windicss.org/features/directives.html) (misal: `@apply`)
 
 ```md
 # Slidev
@@ -152,76 +152,76 @@ blockquote {
 </style>
 ```
 
-## Static Assets
+## Aset Statis
 
-Just like you would do in markdown, you can use images pointing to a remote or local url.
+Seperti halnya yang anda lakukan di markdown, Anda dapat menggunakan gambar yang menunjuk ke url *remote* atau lokal.
 
-For remote assets, the built-in [`vite-plugin-remote-assets`](https://github.com/antfu/vite-plugin-remote-assets) will cache them into the disk at the first run so you can have instant loading even for large images later on.
-
-```md
-![Remote Image](https://sli.dev/favicon.png)
-```
-
-For local assets, put them into the [`public` folder](/custom/directory-structure.html#public) and reference them with **leading slash**.
+Untuk aset *remote*, plugin [`vite-plugin-remote-assets`](https://github.com/antfu/vite-plugin-remote-assets) bawaan akan meng-*cache*-kannya ke penyimpanan sehingga saat aplikasi pertama kali dijalankan aplikasi akan memuat secara instan bahkan untuk gambar berukuran besar.
 
 ```md
-![Local Image](/pic.png)
+![Gambar Remote](https://sli.dev/favicon.png)
 ```
 
-For you want to apply custom sizes or styles, you can convert them to the `<img>` tag 
+Untuk aset lokal, letakkan di [folder `public`](/custom/directory-structure.html#public) dan rujuk dengan **awalan garis miring**.
+
+```md
+![Gambar Lokal](/pic.png)
+```
+
+Jika anda ingin menerapkan ukuran dan *style* kustom, anda dapat mengubahnya menjadi tag `<img>`.
 
 ```html
 <img src="/pic.png" class="m-40 h-40 rounded shadow" />
 ```
 
-## Notes
+## Catatan
 
-You can also take notes for each slide. They will show up in [Presenter Mode](/guide/presenter-mode) for you to reference during presentations.
+Anda juga dapat mengambik catatan untuk setiap slide. Catatan akan muncul di [Mode Penampil](/guide/presenter-mode.md) untuk referensi anda selama presentasi.
 
-In Markdown, the last comment block in each slide will be treated as a note.
+Di Markdown, blok komentar terakhi di setiap slide akan dianggap sebagai catatan.
 
 ~~~md
 ---
 layout: cover
 ---
 
-# Page 1
+# Halaman 1
 
-This is the cover page.
+Ini halaman sampul.
 
-<!-- This is a note -->
+<!-- Ini catatan -->
 
 ---
 
-# Page 2
+# Halaman 2
 
-<!-- This is NOT a note because it precedes the content of the slide -->
+<!-- Ini BUKAN catatn karena mendahului konten slide -->
 
-The second page
+Halaman kedua
 
 <!--
-This is another note
+Ini catatan lainnya
 -->
 ~~~
 
-## Icons
+## Ikon
 
-Slidev allows you to have the accessing to almost all the popular open-source iconsets **directly** in your markdown. Powered by [`vite-plugin-icons`](https://github.com/antfu/vite-plugin-icons) and [Iconify](https://iconify.design/).
+Slideve memungkinkan anda untuk mengakses hampir seluruh set ikon sumber-terbuka populer **secara langsung** di markdown anda. Didukung oleh [`vite-plugin-icons`](https://github.com/antfu/vite-plugin-icons) dan [Iconify](https://iconify.design/).
 
-The naming follows [Iconify](https://iconify.design/)'s conversion `{collection-name}-{icon-name}`. For example:
+Penamaan mengikuti konvensi [Iconify](https://iconify.design/) `{collection-name}-{icon-name}`. Misalnya:
 
 - `<mdi-account-circle />` - <mdi-account-circle /> from [Material Design Icons](https://github.com/Templarian/MaterialDesign)
 - `<carbon-badge />` - <carbon-badge /> from [Carbon](https://github.com/carbon-design-system/carbon/tree/main/packages/icons)
 - `<uim-rocket />` - <uim-rocket /> from [Unicons Monochrome](https://github.com/Iconscout/unicons)
 - `<twemoji-cat-with-tears-of-joy />` - <twemoji-cat-with-tears-of-joy /> from [Twemoji](https://github.com/twitter/twemoji)
 - `<logos-vue />` - <logos-vue /> from [SVG Logos](https://github.com/gilbarbara/logos)
-- And much more...
+- Dan lainnya...
 
-Browse and search for all the icons available with [Icônes](https://icones.js.org/).
+Jelajahi dan cari semua ikon yang tersedia dengan [Icônes](https://icones.js.org/).
 
-### Styling Icons
+### Mengubah Style Ikon
 
-You can style the icons just like other HTML elements. For example:
+Anda dapat mengubah style ikon layaknya elemen HTML lainnya. Misalnya:
 
 ```html
 <uim-rocket />
@@ -233,13 +233,13 @@ You can style the icons just like other HTML elements. For example:
 <uim-rocket class="text-3xl text-red-400 mx-2" />
 <uim-rocket class="text-3xl text-orange-400 animate-ping ml-2" />
 
-## Slots
+## Slot
 
-> Available since v0.18
+> Tersedia sejak v0.18
 
-Some layouts can provide multiple contributing points using [Vue's named slots](https://v3.vuejs.org/guide/component-slots.html).
+Beberapa tata letak dapat menyediakan beberapa poin kontribusi menggunakan [slot nama Vue](https://v3.vuejs.org/guide/component-slots.html).
 
-For example, in [`two-cols` layout](https://github.com/slidevjs/slidev/blob/main/packages/client/layouts/two-cols.vue), you can have two columns left (`default` slot) and right (`right` slot) side by side.
+Misalnya, di [tata letak `two-cols`](https://github.com/slidevjs/slidev/blob/main/packages/client/layouts/two-cols.vue), anda dapat memiliki dua kolom kiri (slot `default`) dan kanan (slot `kanan`) secara berdampingan.
 
 ```md
 ---
@@ -248,16 +248,16 @@ layout: two-cols
 
 <template v-slot:default>
 
-# Left
+# Kiri
 
-This shows on the left
+Ini akan muncul di kiri
 
 </template>
 <template v-slot:right>
 
-# Right
+# Kanan
 
-This shows on the right
+Ini akan muncul di kanan
 
 </template>
 ```
@@ -273,25 +273,25 @@ This shows on the right
 </div>
 </div>
 
-We also provide a shorthand syntax sugar `::name::` for slot name. The following example works exactly the same as the previous one.
+Kami juga menyediakan sintaks singkatan gula `::name::` untuk nama slot. Contoh berikut bekerja persis sama dengan yang sebelumnya.
 
 ```md
 ---
 layout: two-cols
 ---
 
-# Left
+# Kiri
 
-This shows on the left
+Ini akan muncul di kiri
 
 ::right::
 
-# Right
+# Kanan
 
-This shows on the right
+Ini akan muncul di kanan
 ```
 
-You can also explicitly specify the default slot and provide in the custom order
+Anda juga dapat secara eksplisit menspesifikasi slot *default* dan membuat urutan khusus.
 
 ```md
 ---
@@ -300,20 +300,20 @@ layout: two-cols
 
 ::right::
 
-# Right
+# Kanan
 
-This shows on the right
+Ini akan muncul di kanan
 
 ::default::
 
-# Left
+# Kiri
 
-This shows on the left
+Ini akan muncul di kiri
 ```
 
-## Configurations
+## Konfigurasi
 
-All configurations needed can be defined in the Markdown file. For example:
+Semua konfigurasi yang diperlukan dapat didefinisikan di file Markdown. Misalnya:
 
 ```md
 ---
@@ -327,26 +327,25 @@ background: 'https://source.unsplash.com/1600x900/?nature,water'
 This is the cover page.
 ```
 
-Learn more about [frontmatter configurations](/custom/#frontmatter-configures).
+Pelajari lebih lanjut tentang [konfigurasi frontmatter](/custom/#frontmatter-configures).
 
 ## LaTeX
 
-Slidev comes with LaTeX support out-of-box, powered by [KaTeX](https://katex.org/).
+Slidev mendukung LaTeX secara bawaan, didukung dengan [KaTeX](https://katex.org/).
 
 <Tweet id="1392246507793915904" />
 
 ### Inline
 
-Surround your LaTeX with a single `$` on each side for inline rendering.
+Kelilingi LaTeX Anda dengan satu `$` di setiap sisi untuk rendering *inline*.
 
 ```md
 $\sqrt{3x-1}+(1+x)^2$
 ```
 
-### Block
+### Blok
 
-Use two (`$$`) for block rendering. This mode uses bigger symbols and centers
-the result.
+Gunakan dua (`$$`) untuk rendering blok. Mode ini menggunakan simbol yang lebih besar dan memusatkan hasilnya.
 
 ```md
 $$
@@ -363,67 +362,67 @@ $$
 $$
 ```
 
-Learn more: [Demo](https://sli.dev/demo/starter/8) | [KaTeX](https://katex.org/) | [`markdown-it-katex`](https://github.com/waylonflinn/markdown-it-katex)
+Pelajari lebih lanjut: [Demo](https://sli.dev/demo/starter/8) | [KaTeX](https://katex.org/) | [`markdown-it-katex`](https://github.com/waylonflinn/markdown-it-katex)
 
-## Diagrams
+## Diagram
 
-You can also create diagrams / graphs from textual descriptions in your Markdown, powered by [Mermaid](https://mermaid-js.github.io/mermaid).
+Anda juga dapat membuat diagram/grafik dari deskripsi tekstual di Markdown Anda, didukung oleh [Mermaid](https://mermaid-js.github.io/mermaid).
 
-Code blocks marked as `mermaid` will be converted to diagrams, for example:
+Blok kode yang ditandai sebagai `mermaid` akan diubah menjadi diagram, misalnya:
 
 ~~~md
 //```mermaid
 sequenceDiagram
-  Alice->John: Hello John, how are you?
-  Note over Alice,John: A typical interaction
+  Alice->John: Halo John, bagaimana kabarmu?
+  Note over Alice,John: Sebuah interaksi biasa
 //```
 ~~~
 
-You can further pass an options object to it to specify the scaling and theming. The syntax of the object is a JavaScript object literal, you will need to add quotes (`'`) for strings and use comma (`,`) between keys.
+Anda selanjutnya dapat meneruskan objek opsi ke sana untuk menentukan penskalaan dan tema. Sintaks objek adalah literal objek JavaScript, Anda perlu menambahkan tanda kutip (`'`) untuk string dan menggunakan koma (`,`) di antara kunci.
 
 ~~~md
 //```mermaid {theme: 'neutral', scale: 0.8}
 graph TD
-B[Text] --> C{Decision}
-C -->|One| D[Result 1]
-C -->|Two| E[Result 2]
+B[Teks] --> C{Keputusan}
+C -->|Satu| D[Hasil 1]
+C -->|Dua| E[Hasil 2]
 //```
 ~~~
 
-Learn more: [Demo](https://sli.dev/demo/starter/9) | [Mermaid](https://mermaid-js.github.io/mermaid)
+Pelajari lebih lanjut: [Demo](https://sli.dev/demo/starter/9) | [Mermaid](https://mermaid-js.github.io/mermaid)
 
-## Multiple Entries
+## Masukan Jamak
 
-> Available since v0.15
+> Tersedia sejak v0.15
 
-You can split your `slides.md` into multiple files and organize them as you want.
+Anda dapat membagi `slides.md` menjadi beberapa file dan mengaturnya sesuai keinginan.
 
 `slides.md` :
 
 ```md
-# Page 1
+# Halaman 1
 
-This is a normal page
+Ini halaman normal
 
 ---
 src: ./subpage2.md
 ---
 
-<!-- this page will be loaded from './subpage2.md' -->
-Inline content will be ignored
+<!-- halaman ini akan dimuat dari './subpage2.md' -->
+Konten dalam baris akan diabaikan
 ```
 
 `subpage2.md` :
 
 ```md
-# Page 2
+# Halaman 2
 
-This page is from another file
+Halaman ini dari file lain
 ```
 
-### Frontmatter Merging
+### Penggabungan Frontmatter
 
-You can provide frontmatters from both your main entry and external markdown pages. If there are the same keys in them, the ones from the **main entry have the higher priority**. For example
+Anda dapat memberikan frontmatter dari entri utama dan halaman markdown eksternal. Jika ada kunci yang sama di dalamnya, kunci dari **entri utama memiliki prioritas lebih tinggi**. Sebagai contoh:
 
 `slides.md` :
 
@@ -443,12 +442,12 @@ layout: cover
 background: https://sli.dev/foo.png
 ---
 
-# Cover
+# Sampul
 
-Cover Page
+Halaman sampul
 ```
 
-They will end up being equivalent of the following page:
+Mereka akan berakhir menjadi setara dengan halaman berikut:
 
 ```md
 ---
@@ -457,14 +456,14 @@ background: https://sli.dev/bar.png
 class: text-center
 ---
 
-# Cover
+# Sampul
 
-Cover Page
+Halaman sampul
 ```
 
-### Page Reusing
+### Penggunaan Ulang Halaman
 
-With the multi-entries support, reusing pages could be straightforward. For example:
+Dengan dukungan multi-entri, penggunaan kembali halaman dapat dilakukan dengan mudah. Sebagai contoh:
 
 ```yaml
 ---
@@ -480,7 +479,7 @@ src: ./content.md
 ---
 
 ---
-# reuse
+# gunakan ulang
 src: ./content.md
 ---
 ```
